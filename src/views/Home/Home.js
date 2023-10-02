@@ -1,11 +1,15 @@
+import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
+
 import "./Home.css"
 
 function Home(){
     return(
         <>
-              <div>
-                Home
-              </div>
+           
+           <Navbar />
+
+           <Footer />
         </>
     )
 }

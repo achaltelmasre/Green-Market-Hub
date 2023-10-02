@@ -5,7 +5,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 import Home from "./views/Home/Home"
 import About from "./views/About/About"
-import Order from "./views/Oder/Order";
+import Order from "./views/Order/Order";
 import Review from "./views/Review/Review"; 
 import Contact from "./views/Contact/Constact";
 
