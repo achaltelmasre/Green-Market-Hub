@@ -1,0 +1,9 @@
+.social-icon i {
+   
+    margin: 15px;
+}
+.card {
+    padding: 10px;
+    border: none;
+    box-shadow: 2px 2px 5px 2px gray;
+}
