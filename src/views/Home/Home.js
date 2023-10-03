@@ -33,7 +33,7 @@ function Home(){
            <AddressForm />
 
          <div className='design-project slider-img'>
-             <Navbar />
+            
                 <Carousel interval={6000}>
                     <Carousel.Item>
                         <img className='d-block w-100 ' src={img1} alt='First slide' />

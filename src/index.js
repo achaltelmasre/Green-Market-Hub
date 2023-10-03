@@ -2,23 +2,16 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 import Home from "./views/Home/Home"
 import About from "./views/About/About"
 import Order from "./views/Order/Order";
 import Review from "./views/Review/Review"; 
-
-import Contact from "./views/Contact/Constact";
-import ReadPost from "./views/Order/ReadPost/ReadPost";
-=======
 import Contact from "./views/Contact/Contact";
-
 
 
 const router = createBrowserRouter([
   {
-    path: "/home",
+    path: "/",
     element: <Home />,
   },
   {
@@ -26,7 +19,7 @@ const router = createBrowserRouter([
     element: <About />,
   },
   {
-    path: "/",
+    path: "/order",
     element: <Order />,
   },
   {
