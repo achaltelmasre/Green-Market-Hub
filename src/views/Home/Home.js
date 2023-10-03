@@ -12,10 +12,7 @@ import veg from "./img/veg-img.jpg"
 import masale from "./img/garam-masala.png"
 import grocery from "./img/grocery.png"
 import delivery from "./img/free-delivery.png"
-import store from "./img/store.png"
-
-
-
+import store from "./img/store.png";
 import { Carousel } from 'react-bootstrap';
 
 
@@ -29,9 +26,9 @@ function Home(){
            
 
            <Navbar />
-<<<<<<< HEAD
-=======
-           <AddressForm />
+
+
+      
 
          <div className='design-project slider-img'>
             
@@ -73,7 +70,7 @@ function Home(){
                     text="We have 2 store that have prompt service. so go and check out."/>
             </div>
             
->>>>>>> 251b0673c984817e8ca6366c118fc5275d63c620
+
            <Footer />
         </>
     );
