@@ -8,12 +8,17 @@ import Home from "./views/Home/Home"
 import About from "./views/About/About"
 import Order from "./views/Order/Order";
 import Review from "./views/Review/Review"; 
+
+import Contact from "./views/Contact/Constact";
+import ReadPost from "./views/Order/ReadPost/ReadPost";
+=======
 import Contact from "./views/Contact/Contact";
+
 
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/home",
     element: <Home />,
   },
   {
@@ -21,7 +26,7 @@ const router = createBrowserRouter([
     element: <About />,
   },
   {
-    path: "/order",
+    path: "/",
     element: <Order />,
   },
   {
@@ -31,8 +36,12 @@ const router = createBrowserRouter([
   {
     path:"/contact",
     element: <Contact/>,
-  }
+  },
+  // {
+  //   path: '/Post/ReadPost/:id',
+  //   element: <ReadPost/>
+  // },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<RouterProvider router={router} />);
+root.render(<RouterProvider router={router} />)
