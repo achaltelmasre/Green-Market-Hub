@@ -4,7 +4,7 @@
      background-size: cover;
      background-position: center;
     opacity: 1;
-    height: 90vh;
+    height: 95vh;
 }
 
 .main-heading {
@@ -15,4 +15,8 @@
     top: 35%;
     font-size: 60px;
     letter-spacing:12px;
+}
+
+.set-margin {
+    margin: 65px 50px;
 }

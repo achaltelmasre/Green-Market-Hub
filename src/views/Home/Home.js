@@ -1,5 +1,7 @@
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
+import AddressForm from "./../../components/Form/AddressForm";
+import "./Home.css";
 import HomeCard from "../../components/Cards/HomeCard";
 import DeliveryCard from "../../components/Cards/DeliveryCard";
 
@@ -26,6 +28,9 @@ function Home(){
     return(
         <>
            
+
+           <Navbar />
+           <AddressForm />
 
          <div className='design-project slider-img'>
              <Navbar />
@@ -67,12 +72,6 @@ function Home(){
                     text="We have 2 store that have prompt service. so go and check out."/>
             </div>
             
-
-
-     
-             
-           
-
            <Footer />
         </>
     );
