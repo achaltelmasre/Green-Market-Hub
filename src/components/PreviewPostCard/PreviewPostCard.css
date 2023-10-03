@@ -1,0 +1,56 @@
+.preview-post-card{
+
+ /* box-shadow: 0 2px 20px 0 rgb(175, 171, 171);   */
+ /* border: 1px solid rgb(32, 31, 31); */
+ display:block;
+ margin: 30px;
+ width: 300px;
+ padding: 20px;
+ /* border-radius: 10px; */
+ background-color: white;
+ cursor: pointer;
+ text-align: center;
+}
+.title-card{
+    color: #5aa33a;
+    margin-top: 20px;
+}
+.price-card{
+    color: #ff5a56;
+}
+
+.image-card{
+    height: 300px;
+    margin-top: -18px;margin-bottom: -15%;
+}
+.pric{
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: -10px;
+}
+.button{
+    text-decoration: none;
+    background-color: #ff5a56;
+    padding:5px 17px;
+    color: white;
+    margin: 10px;
+    width: 200px;
+    
+}
+.view{
+    background-color: #5aa33a;
+    border: 2px solid #5aa33a;
+}
+.view:hover{
+    color: #5aa33a;
+    background-color: white;
+}
+.buy-now{
+    background-color: #ff5a56;
+    border: 2px solid #ff5a56;
+}
+.buy-now:hover{
+    color: #ff5a56;
+    background-color: white;
+}
+
