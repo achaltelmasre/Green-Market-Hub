@@ -7,10 +7,10 @@ const Footer = () =>
   return (
     <>
               
-<footer class="text-center  text-lg-start```````````````` bg-dark text-light  ">
+<footer class="  text-lg-s bg-dark text-light  ">
   <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
     
-    <div class="me-5 d-none d-lg-block">
+    <div class="me-5 d-none d-sm-block">
       <span>Get connected with us on social networks:</span>
     </div>
   
@@ -38,7 +38,7 @@ const Footer = () =>
   </section>
 
   <section class="">
-    <div class="container text-center text-md-start mt-5">
+    <div class="container text-md-start mt-5">
  
       <div class="row mt-3">
        
