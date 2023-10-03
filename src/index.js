@@ -13,7 +13,7 @@ import ReadPost from "./views/Order/ReadPost/ReadPost";
 
 const router = createBrowserRouter([
   {
-    path: "/home",
+    path: "/",
     element: <Home />,
   },
   {
@@ -21,7 +21,7 @@ const router = createBrowserRouter([
     element: <About />,
   },
   {
-    path: "/",
+    path: "/order",
     element: <Order />,
   },
   {
@@ -32,10 +32,10 @@ const router = createBrowserRouter([
     path:"/contact",
     element: <Contact/>,
   },
-  // {
-  //   path: '/Post/ReadPost/:id',
-  //   element: <ReadPost/>
-  // },
+  {
+    path: '/Post/ReadPost/:id',
+    element: <ReadPost/>
+  },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

@@ -49,7 +49,7 @@ function ReadPost() {
 
   return (
     <>
-      <h1>Read Post {id}</h1>
+      
 
       <div className="card-details">
         <div  className="image-div">
