@@ -1,0 +1,22 @@
+.about-container {  
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)), 
+     url(./vegetablesImg.jpg) ;
+     background-size: cover;
+     background-position: center;
+    opacity: 1;
+    height: 95vh;
+}
+
+.main-heading {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    top: 35%;
+    font-size: 60px;
+    letter-spacing:12px;
+}
+
+.set-margin {
+    margin: 65px 50px;
+}

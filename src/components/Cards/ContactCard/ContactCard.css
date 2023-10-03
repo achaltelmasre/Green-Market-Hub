@@ -1,0 +1,10 @@
+.main-contact-card-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.contact-card{
+    height: 300px;
+    background-color: aqua;
+    width: 350px;
+    margin-top: 300px;
+}
