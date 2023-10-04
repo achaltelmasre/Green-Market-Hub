@@ -1,18 +1,25 @@
 .about-container {  
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)), 
+    background-image:  
      url(./vegetablesImg.jpg) ;
      background-size: cover;
-     background-position: center;
-    opacity: 1;
-    height: 90vh;
+    height: 100vh;
 }
 
 .main-heading {
-    text-align: center;
+    /* text-align: center; */
     font-weight: bold;
-    color: white;
+    color: red;
     position: relative;
-    top: 35%;
-    font-size: 60px;
-    letter-spacing:12px;
+    top: 5%;
+    left: 10%;
+    font-size: 50px;
+    letter-spacing:3px;
+}
+.main-heading:hover {
+    color: rgb(32, 207, 32);
+ 
+}
+
+.set-margin {
+    margin: 65px 50px;
 }

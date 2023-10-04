@@ -1,5 +1,6 @@
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
+import "./Home.css";
 import HomeCard from "../../components/Cards/HomeCard";
 import DeliveryCard from "../../components/Cards/DeliveryCard";
 
@@ -11,10 +12,7 @@ import veg from "./img/veg-img.jpg"
 import masale from "./img/garam-masala.png"
 import grocery from "./img/grocery.png"
 import delivery from "./img/free-delivery.png"
-import store from "./img/store.png"
-
-
-
+import store from "./img/store.png";
 import { Carousel } from 'react-bootstrap';
 
 
@@ -27,8 +25,13 @@ function Home(){
         <>
            
 
+           <Navbar />
+
+
+      
+
          <div className='design-project slider-img'>
-             <Navbar />
+            
                 <Carousel interval={6000}>
                     <Carousel.Item>
                         <img className='d-block w-100 ' src={img1} alt='First slide' />
@@ -67,11 +70,6 @@ function Home(){
                     text="We have 2 store that have prompt service. so go and check out."/>
             </div>
             
-
-
-     
-             
-           
 
            <Footer />
         </>

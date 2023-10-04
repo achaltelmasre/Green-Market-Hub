@@ -1,3 +1,7 @@
+import React from "react";
+import Post from "./Posts/Post";
+import ReadPost from "./ReadPost/ReadPost";
+
 import "./Order.css"
 
 function Order(){
@@ -6,6 +10,9 @@ function Order(){
               <div>
                 Order
               </div>
+              {/* <ReadPost/> */}
+
+           <Post/>
         </>
     )
 }

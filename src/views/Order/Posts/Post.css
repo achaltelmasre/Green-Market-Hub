@@ -1,0 +1,21 @@
+.container{
+    margin: 0px;
+}
+.card{
+    border: 1px solid black;
+    margin: 20px;
+    width: 500px;
+    padding: 20px;
+    background-color: rgba(165, 42, 42, 0.166);
+}
+.container-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.text-cen{
+    text-align: center;
+}

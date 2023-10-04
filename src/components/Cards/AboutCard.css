@@ -1,0 +1,39 @@
+.social-icon i {
+    margin: 14px;
+    font-size: 33px;
+    color: black;
+    transition: 1s;
+}
+
+.social-icon i:hover {
+cursor: pointer;
+color: rgb(37, 37, 172);
+}
+
+.about-card {
+    width: 350px;
+    padding: 15px;
+    border: none;
+    text-align: center;
+    box-shadow: 2px 2px 5px 3px gray;
+    transition: 1s;
+    border-radius: 10px;
+}
+.about-card:hover {
+    transform: scale(1.04);
+    box-shadow: 2px 2px 5px 3px rgb(154, 243, 154);
+}
+.our-img {
+    height: 310px;
+    width: 98%;
+    
+}
+
+.peerlist-icon {
+background-color: black;
+}
+
+.tag {
+    color: rgb(10, 162, 10);
+    font-size: 24px;
+}
