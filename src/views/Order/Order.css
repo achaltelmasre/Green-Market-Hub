@@ -1,0 +1,15 @@
+.image-poster1{
+    width: 100%;
+}
+.disp-flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px;
+    background-color: rgb(237, 236, 236);
+    padding: 10px;
+    font-weight: bold;
+    padding-top: 20px;
+
+   
+}

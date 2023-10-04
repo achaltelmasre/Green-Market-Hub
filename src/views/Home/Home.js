@@ -29,9 +29,9 @@ function Home(){
            
 
            <Navbar />
-<<<<<<< HEAD
-=======
-           <AddressForm />
+
+
+           {/* <AddressForm /> */}
 
          <div className='design-project slider-img'>
             
@@ -73,7 +73,7 @@ function Home(){
                     text="We have 2 store that have prompt service. so go and check out."/>
             </div>
             
->>>>>>> 251b0673c984817e8ca6366c118fc5275d63c620
+
            <Footer />
         </>
     );
