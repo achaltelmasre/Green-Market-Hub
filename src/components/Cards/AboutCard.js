@@ -4,6 +4,7 @@ import "./AboutCard.css";
 export default function AboutCard(props) {
   const { name, education,Img, tag,linkedInLink,githubLink,peerlistLink } = props;
   return (
+   
     <div className="about-card">
       <img src={Img} className="our-img mb-1"/>
       <h4> {name} </h4> 
@@ -15,5 +16,6 @@ export default function AboutCard(props) {
       <a href={peerlistLink}><i class="fa-solid fa-p" ></i></a>
       </span>
     </div>
+
   )
 }
