@@ -15,11 +15,26 @@
     font-size: 50px;
     letter-spacing:3px;
 }
+
+@media screen and ((min-width:678px) and (max-width: 991px)) {
+    .main-heading {
+font-size: 40px;
+    }
+
+}
+
+    @media screen and ((min-width:100px) and (max-width: 679px)) {
+    .main-heading {
+  font-size: 33px;
+    }
+}
+
 .main-heading:hover {
     color: rgb(32, 207, 32);
  
 }
 
 .set-margin {
-    margin: 65px 50px;
+    margin: 70px 60px;
+
 }

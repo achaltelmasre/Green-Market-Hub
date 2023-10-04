@@ -37,10 +37,10 @@ function About() {
 
             </div>
 
-            <div className=" d-flex justify-content-evenly mt-5 ">
+            <div className=" d-flex justify-content-evenly mt-5 flex-wrap ">
 
 
-                <div >
+                <div className="mt-4">
                     <AboutCard Img={ImgAchal} name="Achal Telmasre" tag="Front-end Developer"
                         education="Btech (IT)" 
                          linkedInLink="https://www.linkedin.com/in/achaltelmasre/"
@@ -48,7 +48,7 @@ function About() {
                          peerlistLink="https://peerlist.io/achalmasre" />
                 </div>
 
-                <div >
+                <div className="mt-4">
                     <AboutCard Img={ImgPoonam} name="Poonam Digole" tag="Front-end Developer"
                         education="Btech Final Year (IT)"
                         linkedInLink="https://www.linkedin.com/in/poonam-digole"
@@ -56,7 +56,7 @@ function About() {
                          peerlistLink="https://peerlist.io/poonamdigole" />
                 </div>
 
-                <div >
+                <div className="mt-4" >
                     <AboutCard Img={ImgAbhi} name="Abhijeet Kokat" tag="Front-end Developer"
                         education="Btech Third Year (CSE)"
                         linkedInLink="https://www.linkedin.com/in/abhijeetkokat007/"
@@ -64,7 +64,7 @@ function About() {
                         peerlistLink="https://peerlist.io/abhijeetkokat07" />
                 </div>
 
-                <div >
+                <div className="mt-4">
                     <AboutCard Img={ImgArti} name="Arati mendhe" tag="Front-end Developer"
                         education="BCA" linkedInLink="https://www.linkedin.com/in/aartimedhe/"
                         githubLink="https://github.com/aaru-01" 
