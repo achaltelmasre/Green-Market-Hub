@@ -22,8 +22,8 @@ function About() {
                 <h1>WE ARE AN AWESOME TEAM OF <br />
                     TRYING TO PROVIDE BEST SERVICE </h1>
                 <p className="fs-5 text-center m-5">
-                    Officially established in 1999, NGK has a long history that dates back to the
-                    1920s. Our experience and heritage within the fruit industry in India is second
+                    Officially established in 2023, NGK has a long history that dates back to the
+                    2020s. Our experience and heritage within the fruit industry in India is second
                     to none. Keeping our roots intact, we represent the same passion for quality,
                     service and values that we were built on. Today, NGK imports fresh, wholesome
                     and high quality fruits straight from the orchards of the farthest corners
