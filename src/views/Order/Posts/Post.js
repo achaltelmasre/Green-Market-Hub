@@ -9,7 +9,7 @@ function Post() {
   return (
     <>
     <div>
-      <h1 className="text-cen"> Card </h1>
+      {/* <h1 className="text-cen"> Card </h1> */}
       <div className="container-main"> 
     {
         blogData.map((Post, index)=>(
