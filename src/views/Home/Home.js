@@ -12,10 +12,7 @@ import veg from "./img/veg-img.jpg"
 import masale from "./img/garam-masala.png"
 import grocery from "./img/grocery.png"
 import delivery from "./img/free-delivery.png"
-import store from "./img/store.png"
-
-
-
+import store from "./img/store.png";
 import { Carousel } from 'react-bootstrap';
 
 
@@ -31,7 +28,11 @@ function Home(){
            <Navbar />
 
 
+
            {/* <AddressForm /> */}
+
+      
+
 
          <div className='design-project slider-img'>
             
@@ -62,12 +63,19 @@ function Home(){
                     <HomeCard img={masale} name="MASALE"/>
             </div>
 
+
+            <div>
+                
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121058.93187091679!2d73.78056541087135!3d18.52476137538877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67461101%3A0x828d43bf9d9ee343!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1696335391354!5m2!1sen!2sin" width="100%" height="400"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className="p-5"></iframe>
+
+            </div>
+
             <div className="d-flex flex-wrap justify-content-center">
                     <DeliveryCard img={grocery} name="FRESH GROCERY"
                     text="Quality and A grade grocery right from the farms at your doorstep." />
 
                     <DeliveryCard  img={delivery} name="FREE HOME DELIVERY"
-                    text="We offer free home delivery to all our clients. all you have to do is just make a call."/>
+                    text="We offer free home delivery to all our clients. all  you have to do is just make a call."/>
 
                     <DeliveryCard  img={store} name="PICK UP FROM OUR STORE"
                     text="We have 2 store that have prompt service. so go and check out."/>
