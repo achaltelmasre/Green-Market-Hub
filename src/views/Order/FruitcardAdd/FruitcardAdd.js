@@ -6,6 +6,7 @@ import { saveListToLocalStorage } from "./../../../components/Util/LocalStorage"
 import "./FruitcardAdd.css";
 import { faCircleRadiation } from "@fortawesome/free-solid-svg-icons";
 import blogData from "./../../../configs/blogs-data.json";
+import vegetableData from "./../../../configs/vegetable-data.json";
 
 
 const Home = () => {
@@ -24,7 +25,7 @@ const Home = () => {
   // const [priority, setPriority] = useState(" ");
   const [isEdit, setIsEdit] = useState(false);
   const [hidden, setHidden] = useState(false);
-
+  const [abhi,setAbhi]=useState(true)
   // const loadListFromLocalStorage = () =>{
   //     const list = JSON.parse(localStorage.getItem('mahamart'))
   // }
@@ -127,6 +128,10 @@ const Home = () => {
 
     setcard([...tempArray]);
 
+
+
+
+
     saveListToLocalStorage(tempArray);
     showToast("Task deledet successfully!", "alert", 3000);
   };
@@ -181,7 +186,14 @@ const Home = () => {
     setIsEdit(false);
     showToast("Task updated successfully!", "info", 3000);
   };
-  
+  const zzzzzzz=()=>{
+    if(abhi===true){
+      setAbhi(false)
+    }
+    else{
+      setAbhi(true)
+    }
+  }
 
   return (
     <>
@@ -217,8 +229,8 @@ const Home = () => {
 
         <div>
           <div className="push-card">
-            <h3 className="text-center">
-              {isEdit ? `Update task ${id} 🖊️` : `Add Task +`}
+            <h3 className="text-center col-green">
+              {isEdit ? `Update Product  🖊️` : `Add Product +`}
             </h3>
             <div className="add-task-from-container">
            
@@ -280,14 +292,54 @@ const Home = () => {
           </div>
           <button className="btn-close" onClick={()=>{setHidden(false)}}></button>
         </div>
-      </div>:  <button className="btn-add" onClick={()=>{setHidden(true)}}>Add TAsk</button>}
+      </div>:  <button className="btn-add" onClick={()=>{setHidden(true)}}>Add Product</button>}
         
     </div>
 
     <img className="image-poster1" src="https://fpsstore.in/cdn/shop/files/FPS_Whatsapp_1920x.png?v=1691732659" alt="poster image" />
     <div className="container-main"> 
-    {
-        blogData.map((Post, index)=>(
+
+    {/* {
+
+       abhi ? blogData.map((Post, index)=>(
+             <PreviewPostCard key={index} id={Post.id}  image={Post.image} Title={Post.Title} delet={Post.delet} price={Post.price}  />   
+        )) 
+      :null
+        
+    }
+  <button onClick={zzzzzzz}>fff</button> */}
+
+{/* {
+        vegetableData.map((Post, index)=>(
+          
+          
+         <PreviewPostCard key={index} id={Post.id}  image={Post.image} Title={Post.Title} delet={Post.delet} price={Post.price}  />
+       
+          
+        ))
+    } */}
+
+    
+    
+    
+
+     
+            </div>
+
+            <p>
+  <div className="cont-btn-show">
+  <button class="btn btn-showmore " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+   vegetable
+  </button>
+  <button class="btn btn-showmore" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="true" aria-controls="collapseExample1">
+   Fruits
+  </button>
+  </div>
+</p>
+<div class="collapse" id="collapseExample">
+  <div className="container-main">
+  {
+        vegetableData.map((Post, index)=>(
           
           
          <PreviewPostCard key={index} id={Post.id}  image={Post.image} Title={Post.Title} delet={Post.delet} price={Post.price}  />
@@ -295,10 +347,23 @@ const Home = () => {
           
         ))
     }
-    
-    
+  </div>
+</div>
 
-      {card.map((card, index) => {
+<div class="collapse" id="collapseExample1">
+  <div className="container-main">
+  {
+
+ blogData.map((Post, index)=>(
+      <PreviewPostCard key={index} id={Post.id}  image={Post.image} Title={Post.Title} delet={Post.delet} price={Post.price}  />   
+ )) 
+
+ 
+}
+  </div>
+</div>
+<div className="container-main">
+{card.map((card, index) => {
               const { id, Title, description, priority ,delet,price,image} = card;
 
               return (
@@ -317,7 +382,7 @@ const Home = () => {
                 />
               );
             })}
-            </div>
+         </div> 
     </> 
   );
 };

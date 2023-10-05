@@ -31,7 +31,7 @@ function Post({id,
         ))
     } */}
 
-// {/* <div className="tasks-container">
+ {/* <div className="tasks-container">
 //             {card.map((card, index) => {
 //               const { id, Title, description, priority ,delet,price,image} = card;
 

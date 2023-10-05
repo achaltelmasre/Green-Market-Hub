@@ -7,7 +7,7 @@ import PreviewPostCard from "../../components/PreviewPostCard/PreviewPostCard";
 import FruitcardAdd from './FruitcardAdd/FruitcardAdd';
 import  Navbar  from "./../../components/Navbar/Navbar";
 import Footer from './../../components/Footer/Footer';
-import "./Order.css"
+import "./Order.css";
 
 function Order(){
     return(

@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./PreviewPostCard.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import ReadPost from "../../views/Order/ReadPost/ReadPost";
 
 function PreviewPostCard({
@@ -35,14 +38,14 @@ function PreviewPostCard({
           <Link className="button buy-now" to={`/Post/ReadPost/${id}`}>
             Buy Now
           </Link>
-          {/* <span
-          // className="card-delet"
+          <span
+          className="card-delet"
           onClick={() => {
             removeTaskfromList(obj);
           }}
         >
-          🗑️
-        </span> */}
+          <FontAwesomeIcon icon={faXmark} />
+        </span>
         {/* <span
           // className="card-edit-icon"
           onClick={() => {
