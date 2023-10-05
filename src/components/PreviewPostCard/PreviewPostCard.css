@@ -1,10 +1,11 @@
 .preview-post-card{
 
  /* box-shadow: 0 2px 20px 0 rgb(175, 171, 171);   */
- /* border: 1px solid rgb(32, 31, 31); */
+ border: 1px solid rgb(32, 31, 31);
  display:block;
  margin: 30px;
- width: 300px;
+ width: 320px;
+ height: 400px;
  padding: 20px;
  /* border-radius: 10px; */
  background-color: white;
@@ -20,7 +21,8 @@
 }
 
 .image-card{
-    height: 300px;
+    height: 270px;
+    width: 270px;
     margin-top: -18px;margin-bottom: -15%;
 }
 .pric{

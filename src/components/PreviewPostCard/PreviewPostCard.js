@@ -35,22 +35,22 @@ function PreviewPostCard({
           <Link className="button buy-now" to={`/Post/ReadPost/${id}`}>
             Buy Now
           </Link>
-          <span
+          {/* <span
           // className="card-delet"
           onClick={() => {
             removeTaskfromList(obj);
           }}
         >
           🗑️
-        </span>
-        <span
+        </span> */}
+        {/* <span
           // className="card-edit-icon"
           onClick={() => {
             setTaskEditable(id);
           }}
         >
           🖊️
-        </span>
+        </span> */}
         </div>
       </div>
        {/* asdfghjkl;dfghjkl;fghjk */}

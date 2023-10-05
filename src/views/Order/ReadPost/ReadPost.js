@@ -4,9 +4,10 @@ import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import blogData from "./../../../configs/blogs-data.json";
 import Post from "./../Posts/Post";
+import PreviewPostCard from "../../../components/PreviewPostCard/PreviewPostCard";
 import "./ReadPost.css";
 
-function ReadPost() {
+function ReadPost( {price}) {
   const { id } = useParams();
 
   const [Post, setPost] = useState({});
@@ -19,7 +20,7 @@ function ReadPost() {
   }, [id]);
 
   let [main, setMain] = useState(1)
-  let[subtotal, setSubtotal] = useState(350)
+  let[subtotal, setSubtotal] = useState(180)
 
 //   function asdfg(){
 //     {Post.price}
@@ -28,17 +29,20 @@ function ReadPost() {
 
   function increment(){
     if(main==30){
+      // let pric=350;
+
  return
     }
     else{
         setMain(main=main+1)
-        // price = price + price
+        setSubtotal(subtotal=subtotal+ subtotal)
     }
     
   }
 
   function decrement (){
     if(main==1){
+      // let pric=350;
         return
            }
            else{
@@ -66,7 +70,7 @@ function ReadPost() {
             <span className="incr-dec"> {main} KG </span>
             <button onClick={increment} className="btn-dec"> + </button>
           </p>
-          <p className="sub">Subtotal: {Post.price} </p>
+          <p className="sub">Subtotal: {subtotal} </p>
           
           <Link className="buttonn buy-now" to={`/Post/ReadPost/${id}`}>
           Buy Now

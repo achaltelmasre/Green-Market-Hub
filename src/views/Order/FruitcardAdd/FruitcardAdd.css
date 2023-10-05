@@ -112,6 +112,11 @@
 .git-footer:hover{
     color: #f55c34;
     
+
+
+}
+.container{
+position: relative;
 }
 .tasks-container{
     height: 420px;
@@ -121,6 +126,27 @@
   .tasks-container::-webkit-scrollbar {
     width: 5px;
   }
+  .image-poster1{
+    width: 100%;
+}
+.btn-close{
+position: absolute;
+top: 10px;
+right: 10px;
+}
+.btn-add{
+    background-color:#ff5a56;
+    color: white;
+    border: 2px solid #ff5a56;
+    padding: 4px 30px;
+    margin-left: 15px;
+    margin-bottom: 30px;
+    margin-top: 2px;
+}
+.btn-add:hover{
+    background-color: white;
+    color: #f55c34;
+}
 
 
 
