@@ -14,8 +14,8 @@ import ImgArti from "./arti.jpg";
 function About() {
     return (
         <>
+         <Navbar />
             <div className="about-container">
-                <Navbar />
                 <h1 className="main-heading">ABOUT US</h1>
             </div>
 

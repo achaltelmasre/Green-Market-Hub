@@ -4,22 +4,38 @@ import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import blogData from "./../../../configs/blogs-data.json";
 import Post from "./../Posts/Post";
+import PreviewPostCard from "../../../components/PreviewPostCard/PreviewPostCard";
 import "./ReadPost.css";
-
-function ReadPost() {
+ 
+function ReadPost( {price}) {
   const { id } = useParams();
+  
 
-  const [Post, setPost] = useState({});
+  
+  const [post, setPost] = useState({});
+  
+  // console.log(post.price)
+  // const [prices,setPrices]=useState(post.price)
+  let [dataofprice,setDataofprice]=useState()
+
+
+
+ 
+
+  
   useEffect(() => {
     blogData.forEach((postObj) => {
       if (postObj.id == id) {
         setPost(postObj);
+        setDataofprice(postObj.price)
       }
     });
   }, [id]);
 
   let [main, setMain] = useState(1)
-  let[subtotal, setSubtotal] = useState(350)
+  let[subtotal, setSubtotal] = useState(180)
+  
+
 
 //   function asdfg(){
 //     {Post.price}
@@ -28,17 +44,21 @@ function ReadPost() {
 
   function increment(){
     if(main==30){
+      // let pric=350;
+
  return
     }
     else{
         setMain(main=main+1)
-        // price = price + price
+        setSubtotal(subtotal=subtotal+ subtotal)
+        
     }
     
   }
 
   function decrement (){
     if(main==1){
+      // let pric=350;
         return
            }
            else{
@@ -46,19 +66,20 @@ function ReadPost() {
                setSubtotal(subtotal=subtotal- subtotal)
            }
   }
+  
 
   return (
     <>
-      <h1>Read Post {id}</h1>
+      
 
       <div className="card-details">
         <div  className="image-div">
-        <img className="imag" src={Post.image} alt="image not found" />
+        <img className="imag" src={post.image} alt="image not found" />
         </div>
         <div className="dis-text">
            
-          <h1 className="col-gree"> {Post.Title} </h1>
-          <h3>{Post.price} </h3>
+          <h1 className="col-gree"> {post.Title} </h1>
+          <h3>{post.price} </h3>
           <p className="color-red"> 7 sold in last 18 hours</p>
           <span>Size : 1 Box</span> <br/>
           <p className="para-incr ">
@@ -66,7 +87,7 @@ function ReadPost() {
             <span className="incr-dec"> {main} KG </span>
             <button onClick={increment} className="btn-dec"> + </button>
           </p>
-          <p className="sub">Subtotal: {Post.price} </p>
+          <p className="sub">Subtotal:{dataofprice*main} </p>
           
           <Link className="buttonn buy-now" to={`/Post/ReadPost/${id}`}>
           Buy Now

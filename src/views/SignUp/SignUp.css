@@ -1,18 +1,20 @@
 .signup-form {
     background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
-        url(./vegetable-cover.jpg);
+    url(./vegetable-cover.jpg);
     opacity: 1;
     background-size: cover;
     color: #ffffff;
-    padding:1px 24%;
-    font-size: 19px;
+    padding: 1px 24%;
+    font-size: 18px;
+    margin-top: 4%;
 }
+
 .form-control {
     box-shadow: 2px 2px 6px 8px  black;
     color:white;
     font-size: 19px;
     background-color: transparent;
-    margin: 8px;
+    margin: 7px;
     border-radius: 10px;
     padding: 10px ;
 }
@@ -20,24 +22,21 @@
 .form-control:hover {
     background-color: transparent;
     color: white;
- border:1px solid white;
+    border:1px solid white;
   
 }
+
 .btn-signup {
     background-color: #ff5a56;
     color: white;
-    /* width: 15%; */
-    padding:10px 50px;
     font-size: 19px;
-    margin: 5px;
+    margin: 2px;
     transition: 1s;
 
 }
 
-
-
 .btn-signup:hover {
-   
+    background-color: transparent;
  border:1px solid white;
   
 }
