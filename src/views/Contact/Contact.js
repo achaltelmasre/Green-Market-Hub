@@ -6,8 +6,41 @@ import img2 from "./img/green-location.jpg"
 import img3 from "./img/calling.jpg";
 import img4 from "./img/email1.png";
 import ContactCard from "./../../components/Cards/ContactCard/ContactCard";
+import { useState } from "react";
+import showToast from "crunchy-toast";
+
+
 
 function Contact() {
+
+  const [yourName, setYourName]= useState('');
+  const [yourPhoneNumber, setYourPhoneNumber]= useState('');
+  const [yourEmail, setYourEmail]= useState('');
+  const [yourMessage, setYourMessage]= useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+const formData = {
+  yourName:yourName,
+  yourPhoneNumber:yourPhoneNumber,
+  yourEmail:yourEmail,
+  yourMessage:yourMessage,
+}
+
+const formDataString = JSON.stringify(formData);
+localStorage.setItem("formData", formDataString);
+
+setYourName("");
+setYourPhoneNumber("");
+setYourEmail("");
+setYourMessage("");
+
+// alert("Form data saved to localStorage!");
+// alert(" Contact Form data saved successfully!");
+showToast('Contact Details saved successfully!', 'success', 3000);
+};
+
   return (
     <>
       <Navbar />
@@ -43,20 +76,60 @@ function Contact() {
         <h4 className="email-address-contact-page">info@freshproduce.co.in</h4>
       </div>
       <div className="contact-bg-img-3-women-shoping">
-<form>
+<form onSubmit={handleSubmit}>
+
 <h2 className="contact-form-heading1">Say Hello.!!</h2>
 <h4 className="contact-form-heading1">We Would Love To Hear From You. Let’s Have A Talk</h4><br/><br/>
 <div className="contact-main-form">
-<input type="text" placeholder="Your Name" className="contact-user-name" required/><br/>
-<input type="text" placeholder="Your Phone Number" className="contact-user-name" required/><br/>
-<input type="email" placeholder="Your Email" className="contact-user-name" required/><br/>
-<input type="text" placeholder="Your Message" className="contact-user-name" required/><br/>
+
+<input type="text"
+ placeholder="Your Name" 
+ className="contact-user-name" 
+ required
+ onChange={(e)=>{
+  setYourName(e.target.value);
+ }}
+ value={yourName}
+ /><br/>
+
+
+<input type="text"
+ placeholder="Your Phone Number" 
+ className="contact-user-name"
+  required
+  onChange={(e)=>{
+    setYourPhoneNumber(e.target.value);
+   }}
+   value={yourPhoneNumber}
+  /><br/>
+
+
+<input type="email" 
+placeholder="Your Email"
+ className="contact-user-name"
+  required
+  onChange={(e)=>{
+    setYourEmail(e.target.value);
+   }}
+   value={yourEmail}
+  /><br/>
+
+
+<input type="text" 
+placeholder="Your Message" 
+className="contact-user-name-msg"
+ required
+ onChange={(e)=>{
+  setYourMessage(e.target.value);
+ }}
+ value={yourMessage}
+ /><br/>
 {/* <input type="radio"/><span className="form-radio-button-tagline">I consent to Fresh Produce Shoppe | Buy Fruits in Gurgaon collecting my details through this form.</span><br/> */}
 <button type="submit" className="contact-pg-btn-submit">SUBMIT</button>
 </div>
-
 </form>
       </div>
+
       <Footer />
     </>
   )
