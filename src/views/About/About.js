@@ -10,6 +10,7 @@ import ImgAchal from "./achal.jpg";
 import ImgArti from "./arti.jpg";
 
 
+
 function About() {
     return (
         <>
@@ -96,8 +97,7 @@ function About() {
             </div>
 
 
-
-
+        
             <Footer />
 
         </>
