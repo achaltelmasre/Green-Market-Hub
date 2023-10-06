@@ -57,20 +57,27 @@
     border: 2px solid #f55c34;
 
 }
+.col-green{
+    color: #5aa33a;
+}
 .btn{
-    background: #f55c34;
-    border: 2px solid #f55c34;
+    background: #ff5a56;
+    border: 2px solid #ff5a56;
     cursor: pointer;
     color: white;
     /* margin: 5px 10px;
     padding: 5px 10px;
     border-radius: ; */
     width: 118px;
+    padding-top: 0px;
+    
     
 }
 .btn:hover{
     background-color: whitesmoke;
-    color: #f55c34;
+    color: #ff5a56;
+    border: 2px solid #ff5a56;
+
 }
 .push-card{
     /* border: 1px solid black; */
@@ -82,6 +89,25 @@
     background-color: white;
     margin-bottom: 100px;
 
+}
+.btn-showmore{
+    background-color: white;
+    color: #ff5a56;
+    font-size: 30px;
+    border: none;
+    margin: 20px 20px;
+}
+.btn-showmore:hover{
+    border:none;
+    border-radius: 0%;
+    background-color: white;
+    border-bottom: 3px solid #5aa33a;
+    color: #5aa33a;
+}
+
+.cont-btn-show{
+    display: flex;
+    justify-content:center;
 }
 
 .footer{
@@ -112,6 +138,11 @@
 .git-footer:hover{
     color: #f55c34;
     
+
+
+}
+.container{
+position: relative;
 }
 .tasks-container{
     height: 420px;
@@ -121,6 +152,27 @@
   .tasks-container::-webkit-scrollbar {
     width: 5px;
   }
+  .image-poster1{
+    width: 100%;
+}
+.btn-close{
+position: absolute;
+top: 10px;
+right: 10px;
+}
+.btn-add{
+    background-color:#f55c34;
+    color: white;
+    border: 2px solid #f55c34;
+    padding: 4px 30px;
+    margin-left: 15px;
+    margin-bottom: 30px;
+    margin-top: 2px;
+}
+.btn-add:hover{
+    background-color: white;
+    color: #f55c34;
+}
 
 
 
