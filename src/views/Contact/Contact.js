@@ -36,7 +36,7 @@ setYourPhoneNumber("");
 setYourEmail("");
 setYourMessage("");
 
-// alert("Form data saved to localStorage!");
+
 // alert(" Contact Form data saved successfully!");
 showToast('Contact Details saved successfully!', 'success', 3000);
 };
@@ -49,9 +49,9 @@ showToast('Contact Details saved successfully!', 'success', 3000);
         <h1 className="contact-page-tagline">We’re excited to hear from you...</h1>
 
         <div className="contact-main-card-containeer">
-          <ContactCard Img={img2} Heading={'C120- 121, The Shopping Mall, Arjun Marg, Dlf City Phase I, Haryana 122002'} Text={'+91 9356181098'} Img2={img3} Text2={'DLF CITY PHASE I, GURUGRAM,HARYANA'} />
-          <ContactCard Img={img2} Heading={'Shop No. 1, F-Block Market Shopping Plaza, South City II, Gurugram, 122018'} Text={'+91 9356181098'} Img2={img3} Text2={'SOUTH CITY II, GURUGRAM,HARYANA'} />
-          <ContactCard Img={img2} Heading={'D-114 Shop No-1 Ground floor Panchsheel Enclave New Delhi, Delhi 110017'} Text={'+91 9356181098'} Img2={img3} Text2={'PANCHSHEEL ENCLAVE, NEW DELHI'} />
+          <ContactCard Img={img2} Heading={'C120- 121, The Shopping Mall, Arjun Marg, Dlf City Phase I, Haryana 122002'} Text={'+91 4563765897'} Img2={img3} Text2={'DLF CITY PHASE I, GURUGRAM,HARYANA'} />
+          <ContactCard Img={img2} Heading={'Shop No. 1, F-Block Market Shopping Plaza, South City II, Gurugram, 122018'} Text={'+91 8767564534'} Img2={img3} Text2={'SOUTH CITY II, GURUGRAM,HARYANA'} />
+          <ContactCard Img={img2} Heading={'D-114 Shop No-1 Ground floor Panchsheel Enclave New Delhi, Delhi 110017'} Text={'+91 9708654567'} Img2={img3} Text2={'PANCHSHEEL ENCLAVE, NEW DELHI'} />
         </div>
       </div>
       <div className="contact-bg-img2">
@@ -62,9 +62,9 @@ showToast('Contact Details saved successfully!', 'success', 3000);
       </div>
       <div className="contact-conatiner3-bg">
         <div className="contact-main-card-containeer-2">
-          <ContactCard Img={img2} Heading={'8 Aurobindo Market, Hauz Khas, New Delhi, 110016'} Text={'+91 966 771 1972'} Img2={img3} Text2={'AUROBINDO MARKET, NEW DELHI'} />
-          <ContactCard Img={img2} Heading={'5, Community Centre (half ground floor, Basant Lok, Vasant Vihar, New Delhi, Delhi 110057'} Text={'+91 965 429 1972'} Img2={img3} Text2={'VASANT VIHAR, NEW DELHI'} />
-          <ContactCard Img={img2} Heading={'Plot no 1, Rd Number 51, West Punjabi Bagh, New Delhi, 110026'} Text={'+91 96500 49972'} Img2={img3} Text2={'PUNJABI BAGH, NEW DELHI'} />
+          <ContactCard Img={img2} Heading={'8 Aurobindo Market, Hauz Khas, New Delhi, 110016'} Text={'+91 879 567 2234'} Img2={img3} Text2={'AUROBINDO MARKET, NEW DELHI'} />
+          <ContactCard Img={img2} Heading={'5, Community Centre (half ground floor, Basant Lok, Vasant Vihar, New Delhi, Delhi 110057'} Text={'+91 564 987 3458'} Img2={img3} Text2={'VASANT VIHAR, NEW DELHI'} />
+          <ContactCard Img={img2} Heading={'Plot no 1, Rd Number 51, West Punjabi Bagh, New Delhi, 110026'} Text={'+91 234 045 8790'} Img2={img3} Text2={'PUNJABI BAGH, NEW DELHI'} />
         </div>
       </div>
       <div className="contact-bg-img3">
