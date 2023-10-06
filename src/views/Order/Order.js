@@ -5,15 +5,14 @@ import { faCheck,faTruckFast, faShop, faBagShopping } from "@fortawesome/free-so
 import ReadPost from "./ReadPost/ReadPost";
 import PreviewPostCard from "../../components/PreviewPostCard/PreviewPostCard";
 import FruitcardAdd from './FruitcardAdd/FruitcardAdd';
-
-// import  Navbar  from "./../../components/Navbar/Navbar";
-
-import "./Order.css"
+import  Navbar  from "./../../components/Navbar/Navbar";
+import Footer from './../../components/Footer/Footer';
+import "./Order.css";
 
 function Order(){
     return(
         <>
-           {/* < Navbar/>   */}
+           < Navbar/>  
               
              <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
@@ -53,9 +52,11 @@ function Order(){
 
      
         {/* <img className="image-poster1" src="https://fpsstore.in/cdn/shop/files/8_e3ca2669-39cf-4973-be3a-0f367bece4ea.png?v=1695034974" alt="poster image" />  */}
-        <img className="image-poster1" src="https://fpsstore.in/cdn/shop/files/FPS_Whatsapp_1920x.png?v=1691732659" alt="poster image" />
+        
            <Post/>
-           <PreviewPostCard/>
+           {/* <PreviewPostCard/> */}
+
+           <Footer/>
         </>
     )
 }
