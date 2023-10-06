@@ -1,4 +1,22 @@
 .nav1{
     background: transparent;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+  
    
 }
+.back-remo{
+    background: transparent;
+    margin-bottom: -100px;
+    font-weight: bold;
+    z-index: 10;
+    /* position: sticky; */
+}
+
+.hover:hover{
+    border-bottom: 3px solid red !important;
+    color: rgb(244, 94, 13) !important;
+  
+}
+
