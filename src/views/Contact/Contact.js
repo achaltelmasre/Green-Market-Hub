@@ -1,4 +1,5 @@
-
+import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
 import "./Contact.css"
 // import img1 from "./img/locator2.jpg"
 import img2 from "./img/green-location.jpg"
@@ -9,6 +10,7 @@ import ContactCard from "./../../components/Cards/ContactCard/ContactCard";
 function Contact() {
   return (
     <>
+      <Navbar />
       <div className="main-background-contact-container">
         <h5 className="contact-container-heading4">Always Available Whenever You Need Us...</h5>
         <h1 className="contact-page-tagline">We’re excited to hear from you...</h1>
@@ -45,16 +47,17 @@ function Contact() {
 <h2 className="contact-form-heading1">Say Hello.!!</h2>
 <h4 className="contact-form-heading1">We Would Love To Hear From You. Let’s Have A Talk</h4><br/><br/>
 <div className="contact-main-form">
-<input type="text" placeholder="Your Name" className="contact-user-name"/><br/>
-<input type="text" placeholder="Your Phone Number" className="contact-user-name"/><br/>
-<input type="emailto" placeholder="Your Email" className="contact-user-name"/><br/>
-<input type="text" placeholder="Your Message" className="contact-user-name"/><br/>
+<input type="text" placeholder="Your Name" className="contact-user-name" required/><br/>
+<input type="text" placeholder="Your Phone Number" className="contact-user-name" required/><br/>
+<input type="email" placeholder="Your Email" className="contact-user-name" required/><br/>
+<input type="text" placeholder="Your Message" className="contact-user-name" required/><br/>
 {/* <input type="radio"/><span className="form-radio-button-tagline">I consent to Fresh Produce Shoppe | Buy Fruits in Gurgaon collecting my details through this form.</span><br/> */}
-<button type="submit" className="contact-pg-btn-submit">Submit</button>
+<button type="submit" className="contact-pg-btn-submit">SUBMIT</button>
 </div>
 
 </form>
       </div>
+      <Footer />
     </>
   )
 }

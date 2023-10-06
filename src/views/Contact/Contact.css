@@ -6,6 +6,7 @@
     background-size: cover;
     height: 100vh;
 }
+
 .contact-container-heading4 {
     color: white;
     text-align: center;
@@ -57,14 +58,16 @@
     margin-bottom: 40px;
     background: none;
 }
-.contact-main-card-containeer-2{
+
+.contact-main-card-containeer-2 {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     margin-bottom: 40px;
     background: none;
 }
-.contact-bg-img2{
+
+.contact-bg-img2 {
     /* margin-top: -90px; */
     background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
         url(./img/bg-1.jpg);
@@ -72,21 +75,24 @@
     background-size: cover;
     height: 100vh;
 }
-.contact-bg-img3{
+
+.contact-bg-img3 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
-    url(./img/bg-1.jpg);
-opacity: 10;
-background-size: cover;
-height: 100vh;
+        url(./img/bg-1.jpg);
+    opacity: 10;
+    background-size: cover;
+    height: 100vh;
 }
-.contact-conatiner3-bg{
+
+.contact-conatiner3-bg {
     background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
-    url(./img/grapes1.jpg);
-opacity: 10;
-background-size: cover;
-height: 100vh;
+        url(./img/grapes1.jpg);
+    opacity: 10;
+    background-size: cover;
+    height: 100vh;
 }
-.contact-map{
+
+.contact-map {
     height: 460px;
     width: 370px;
     padding-bottom: 30px;
@@ -94,7 +100,8 @@ height: 100vh;
     /* border-radius: 15px; */
     margin-left: 25px;
 }
-.contact-map2{
+
+.contact-map2 {
     height: 460px;
     width: 370px;
     padding-bottom: 30px;
@@ -102,27 +109,30 @@ height: 100vh;
     /* border-radius: 15px; */
     margin-left: 25px;
 }
-.img-email-box{
+
+.img-email-box {
     border-radius: 200px;
     height: 50px;
     margin-left: 570px;
     margin-top: 30px;
 }
-.email-address-contact-page{
+
+.email-address-contact-page {
     text-align: center;
     color: white;
 }
-.contact-bg-img-3-women-shoping{
+
+.contact-bg-img-3-women-shoping {
     /* linear-gradient(rgba(64, 64, 64, 0.9), rgba(0, 0, 0, 0.8)), */
     /* background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
     url(./img/shpong-women3.jpg); */
     background-image: linear-gradient(rgba(65, 64, 64, 0.9), rgba(58, 57, 57, 0.8)), url(./img//shoping-women1.jpg);
-background-size: cover;
-height: 100vh;
+    background-size: cover;
+    height: 100vh;
 }
 
 
-.contact-main-form{
+.contact-main-form {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -130,22 +140,41 @@ height: 100vh;
     margin-left: 280px;
     margin-right: 280px;
 }
-.contact-form-heading1{
+
+.contact-form-heading1 {
     text-align: center;
     color: white;
     padding-top: 40px;
 }
-.contact-user-name{
+
+.contact-user-name {
     padding-left: 20px;
     padding: 8px;
     text-align: center;
     padding-right: 20px;
 }
-.form-radio-button-tagline{
+
+.form-radio-button-tagline {
     color: white;
 }
-.contact-pg-btn-submit{
+
+.contact-pg-btn-submit {
     padding: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
+    border:  5px double white;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 190px;
+    margin-right: 190px;
+    border-radius: 5px;
+}
+.contact-pg-btn-submit:hover {
+    padding: 5px;
+    border:  5px double white;
+    background-color: black;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 190px;
+    margin-right: 190px;
+    border-radius: 5px;
 }

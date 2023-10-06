@@ -31,15 +31,17 @@
 }
 .btn-dec{
     border: 1px solid black;
-    height: 34px;
+    height: 35px;
     width: 30px;
     font-weight: bold;
     padding: 10px;
+    text-align: center;
 }
 .para-incr{
     border: 1px solid black;
     /* width: 113.5px; */
     display: inline-block;
+    padding: 0;
     
 }
 .buttonn{
@@ -48,8 +50,9 @@
     color: white;
     width: 200px;
     text-align: center;
-    padding-top: 8px;
+   
     display: inline-block;
+    /* padding-bottom:1px ; */
     height: 30px;
     text-decoration: none;
 
