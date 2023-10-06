@@ -30,12 +30,7 @@ function Home(){
 
 
 
-           {/* <AddressForm /> */}
-
-      
-
-
-         <div className='design-project slider-img'>
+         <div className='design-project slider-img slider-img1'>
             
                 <Carousel interval={6000}>
                     <Carousel.Item>
