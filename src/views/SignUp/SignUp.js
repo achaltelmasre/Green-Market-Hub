@@ -1,36 +1,25 @@
 import React from "react";
 import "./SignUp.css"
 import Navbar from "../../components/Navbar/Navbar";
-import { Link } from "react-router-dom";
+import { Link, json } from "react-router-dom";
 import { useState } from "react";
 import showToast from 'crunchy-toast';
 
 export default function SignUp() {
 
-  const [email , setEmail] = useState('');
-  const [password , setPassword] = useState('');
-  const [username, setUsername] = useState('');
-  const [mobileNo, setMobileNo] = useState('');
-  const [city, setCity] = useState('');
-  const [select, setSelect] = useState('');
-  const [pincode, setPincode] = useState('');
-  const [checked, setChecked] = useState(false);
-  
-
-// getting password and email 
-  const userEmail = localStorage.getItem('email');
-  const userPassword = localStorage.getItem('password');
-  const userName = localStorage.getItem('username');
-  const userMobileNo = localStorage.getItem('mobileNo');
-  const userCity = localStorage.getItem('city');
-  const userSelect = localStorage.getItem('select');
-  const userPincode = localStorage.getItem('pincode');
-  const userChecked = localStorage.getItem('checked');
+  const [userData , setUserData] = useState([]);
+  const [email, setEmail]= useState('')
+  const [mobileNo, setMobileNo]= useState('')
+  const [password, setPassword]= useState('')
+  const [username, setUsername]= useState('')
+  const [checked, setChecked]= useState('')
+  const [city, setCity]= useState('')
+  const [select, setSelect]= useState('')
+  const [pincode, setPincode]= useState('')
  
-
   
   const HandleSingUp = (e) => {
-    e.preventDefault();
+    // e.preventDefault(); 
     if(!email)
     {
      showToast('Enter Email', 'alert', 3000);
@@ -63,15 +52,23 @@ export default function SignUp() {
     
     else {
     showToast('SignUp Successfully', 'success', 3000);
-  localStorage.setItem('email', email) ;
-  localStorage.setItem('password',password) ;
-  localStorage.setItem('username', username) ;
-  localStorage.setItem('mobile', mobileNo) ;
-  localStorage.setItem('pincode', pincode) ;
-  localStorage.setItem('city', city) ;
-  localStorage.setItem('checked', checked) ;
-}
+    
+    const obj = {
+      email : email,
+      password : password ,
+      username : username,
+      mobileNo : mobileNo,
+      city : city ,
+      select : select ,
+      pincode : pincode ,
+      checked : checked
+    }
+    
+    const temparr =[...userData,obj] ;
+    setUserData(temparr);
+    localStorage.setItem('userdata',JSON.stringify(temparr));
 
+  }
   };
 
   return (
@@ -135,7 +132,7 @@ export default function SignUp() {
             </select>
           </div>
           <div class="col-md-2">
-            <label for="inputZip" class="form-label ms-2">Pin Code</label>
+            <label for="inputZip" class="form-label ms-2">Zip</label>
             <input type="text" class="form-control" id="inputZip" 
              value={pincode}
              onChange = {(e) => {
@@ -155,7 +152,7 @@ export default function SignUp() {
             </div>
           </div>
           <div class="col-12">
-            <button type="submit" class="btn btn-signup"
+            <button type="button" class="btn btn-signup"
               onClick={HandleSingUp} >SignUp</button> <hr />
 
             Already have an account ? <Link to="/login">LogIn</Link>

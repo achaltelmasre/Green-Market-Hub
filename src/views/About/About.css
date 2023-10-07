@@ -10,24 +10,24 @@
     font-weight: bold;
     color: red;
     position: relative;
-    top: 5%;
-    left: 10%;
-    font-size: 50px;
-    letter-spacing:3px;
+    top: 10%;
+    left: 19%;
+    font-size: 40px;
+    letter-spacing:2px;
 }
 
 @media screen and ((min-width:678px) and (max-width: 991px)) {
     .main-heading {
-font-size: 40px;
+font-size: 30px;
     }
 
 }
 
     @media screen and ((min-width:100px) and (max-width: 679px)) {
     .main-heading {
-  font-size: 33px;
+  font-size: 25px;
     }
-}
+    }
 
 .main-heading:hover {
     color: rgb(32, 207, 32);

@@ -10,26 +10,26 @@ import showToast from 'crunchy-toast';
 export default function Login() {
   const [email , setEmail] = useState('');
   const [password , setPassword] = useState('');
-// getting password and email 
-  const userEmail = localStorage.getItem('email');
-  const userPassword = localStorage.getItem('password');
 
+
+    
   const HandleSubmit = (e) => {
     e.preventDefault();
-    if(!email)
+       const getData=localStorage.getItem('userdata')
+      
+      const sotreData=JSON.parse(getData)
+    console.log(sotreData);
+
+    const matchData=sotreData.find((obj)=>{
+       return obj.email===email && obj.password===password
+    })
+    if(matchData)
     {
-     showToast('Enter Email', 'alert', 3000);
- 
+      showToast('LogIn Successfully', 'success', 3000);
     }
-    if (!password) {
-      showToast('Enter Password', 'alert', 3000);
- 
+    else{
+      showToast('enter valid password and email', 'alert', 3000);
     }
-    else {
-    showToast('LogIn Successfully', 'success', 3000);
-  localStorage.setItem('email', email) ;
-  localStorage.setItem('password',password) ;
-}
 
   };
 
