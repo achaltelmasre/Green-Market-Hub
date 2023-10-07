@@ -29,11 +29,11 @@ function Review() {
     const [Content, setContent] = useState('')
     const [Rating, setRating] = useState('')
 
-    useEffect(()=>{
-            const tasklist = JSON.parse(localStorage.getItem('Reviewlist'))
-    setReviewList(tasklist)
+    // useEffect(()=>{
+    //         const tasklist = JSON.parse(localStorage.getItem('Reviewlist'))
+    // setReviewList(tasklist)
 
-    },[])
+    // },[])
 
    
 
