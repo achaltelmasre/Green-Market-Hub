@@ -6,8 +6,42 @@ import img2 from "./img/green-location.jpg"
 import img3 from "./img/calling.jpg";
 import img4 from "./img/email1.png";
 import ContactCard from "./../../components/Cards/ContactCard/ContactCard";
+import { useState } from "react";
+import showToast from "crunchy-toast";
+
+
 
 function Contact() {
+
+  const [yourName, setYourName]= useState('');
+  const [yourPhoneNumber, setYourPhoneNumber]= useState('');
+  const [yourEmail, setYourEmail]= useState('');
+  const [yourMessage, setYourMessage]= useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+const formData = {
+  yourName:yourName,
+  yourPhoneNumber:yourPhoneNumber,
+  yourEmail:yourEmail,
+  yourMessage:yourMessage,
+}
+
+const formDataString = JSON.stringify(formData);
+localStorage.setItem("formData", formDataString);
+
+setYourName("");
+setYourPhoneNumber("");
+setYourEmail("");
+setYourMessage("");
+
+
+// alert(" Contact Form data saved successfully!");
+showToast('Contact Details saved successfully!', 'success', 3000);
+};
+
+
   return (
     <>
       <Navbar />
@@ -16,9 +50,9 @@ function Contact() {
         <h1 className="contact-page-tagline">We’re excited to hear from you...</h1>
 
         <div className="contact-main-card-containeer">
-          <ContactCard Img={img2} Heading={'C120- 121, The Shopping Mall, Arjun Marg, Dlf City Phase I, Haryana 122002'} Text={'+91 9356181098'} Img2={img3} Text2={'DLF CITY PHASE I, GURUGRAM,HARYANA'} />
-          <ContactCard Img={img2} Heading={'Shop No. 1, F-Block Market Shopping Plaza, South City II, Gurugram, 122018'} Text={'+91 9356181098'} Img2={img3} Text2={'SOUTH CITY II, GURUGRAM,HARYANA'} />
-          <ContactCard Img={img2} Heading={'D-114 Shop No-1 Ground floor Panchsheel Enclave New Delhi, Delhi 110017'} Text={'+91 9356181098'} Img2={img3} Text2={'PANCHSHEEL ENCLAVE, NEW DELHI'} />
+          <ContactCard Img={img2} Heading={'C120- 121, The Shopping Mall, Arjun Marg, Dlf City Phase I, Haryana 122002'} Text={'+91 4563765897'} Img2={img3} Text2={'DLF CITY PHASE I, GURUGRAM,HARYANA'} />
+          <ContactCard Img={img2} Heading={'Shop No. 1, F-Block Market Shopping Plaza, South City II, Gurugram, 122018'} Text={'+91 8767564534'} Img2={img3} Text2={'SOUTH CITY II, GURUGRAM,HARYANA'} />
+          <ContactCard Img={img2} Heading={'D-114 Shop No-1 Ground floor Panchsheel Enclave New Delhi, Delhi 110017'} Text={'+91 9708654567'} Img2={img3} Text2={'PANCHSHEEL ENCLAVE, NEW DELHI'} />
         </div>
       </div>
       <div className="contact-bg-img2">
@@ -29,9 +63,9 @@ function Contact() {
       </div>
       <div className="contact-conatiner3-bg">
         <div className="contact-main-card-containeer-2">
-          <ContactCard Img={img2} Heading={'8 Aurobindo Market, Hauz Khas, New Delhi, 110016'} Text={'+91 966 771 1972'} Img2={img3} Text2={'AUROBINDO MARKET, NEW DELHI'} />
-          <ContactCard Img={img2} Heading={'5, Community Centre (half ground floor, Basant Lok, Vasant Vihar, New Delhi, Delhi 110057'} Text={'+91 965 429 1972'} Img2={img3} Text2={'VASANT VIHAR, NEW DELHI'} />
-          <ContactCard Img={img2} Heading={'Plot no 1, Rd Number 51, West Punjabi Bagh, New Delhi, 110026'} Text={'+91 96500 49972'} Img2={img3} Text2={'PUNJABI BAGH, NEW DELHI'} />
+          <ContactCard Img={img2} Heading={'8 Aurobindo Market, Hauz Khas, New Delhi, 110016'} Text={'+91 879 567 2234'} Img2={img3} Text2={'AUROBINDO MARKET, NEW DELHI'} />
+          <ContactCard Img={img2} Heading={'5, Community Centre (half ground floor, Basant Lok, Vasant Vihar, New Delhi, Delhi 110057'} Text={'+91 564 987 3458'} Img2={img3} Text2={'VASANT VIHAR, NEW DELHI'} />
+          <ContactCard Img={img2} Heading={'Plot no 1, Rd Number 51, West Punjabi Bagh, New Delhi, 110026'} Text={'+91 234 045 8790'} Img2={img3} Text2={'PUNJABI BAGH, NEW DELHI'} />
         </div>
       </div>
       <div className="contact-bg-img3">
@@ -43,20 +77,60 @@ function Contact() {
         <h4 className="email-address-contact-page">info@freshproduce.co.in</h4>
       </div>
       <div className="contact-bg-img-3-women-shoping">
-<form>
+<form onSubmit={handleSubmit}>
+
 <h2 className="contact-form-heading1">Say Hello.!!</h2>
 <h4 className="contact-form-heading1">We Would Love To Hear From You. Let’s Have A Talk</h4><br/><br/>
 <div className="contact-main-form">
-<input type="text" placeholder="Your Name" className="contact-user-name" required/><br/>
-<input type="text" placeholder="Your Phone Number" className="contact-user-name" required/><br/>
-<input type="email" placeholder="Your Email" className="contact-user-name" required/><br/>
-<input type="text" placeholder="Your Message" className="contact-user-name" required/><br/>
+
+<input type="text"
+ placeholder="Your Name" 
+ className="contact-user-name" 
+ required
+ onChange={(e)=>{
+  setYourName(e.target.value);
+ }}
+ value={yourName}
+ /><br/>
+
+
+<input type="text"
+ placeholder="Your Phone Number" 
+ className="contact-user-name"
+  required
+  onChange={(e)=>{
+    setYourPhoneNumber(e.target.value);
+   }}
+   value={yourPhoneNumber}
+  /><br/>
+
+
+<input type="email" 
+placeholder="Your Email"
+ className="contact-user-name"
+  required
+  onChange={(e)=>{
+    setYourEmail(e.target.value);
+   }}
+   value={yourEmail}
+  /><br/>
+
+
+<input type="text" 
+placeholder="Your Message" 
+className="contact-user-name-msg"
+ required
+ onChange={(e)=>{
+  setYourMessage(e.target.value);
+ }}
+ value={yourMessage}
+ /><br/>
 {/* <input type="radio"/><span className="form-radio-button-tagline">I consent to Fresh Produce Shoppe | Buy Fruits in Gurgaon collecting my details through this form.</span><br/> */}
 <button type="submit" className="contact-pg-btn-submit">SUBMIT</button>
 </div>
-
 </form>
       </div>
+
       <Footer />
     </>
   )

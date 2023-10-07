@@ -1,12 +1,13 @@
 .nav1{
     background: transparent;
-    padding: 15px;
+    margin: 0;
+    padding-bottom: 20px;
     display: flex;
     justify-content: space-around;
   
-   
 }
-.back-remo{
+
+.back-remo {
     background: transparent;
     margin-bottom: -100px;
     font-weight: bold;
