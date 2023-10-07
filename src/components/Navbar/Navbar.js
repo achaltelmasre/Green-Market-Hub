@@ -29,7 +29,7 @@ import logo from  "./../../views/Home/img/logo.png"
           <Link class="nav-link active ms-5 hover" aria-current="page" to="/contact" >Contact</Link>
         </li>
         <li class="nav-item">
-          <Link class="nav-link active ms-5 hover" aria-current="page" to="/contact" >Login</Link>
+          <Link class="nav-link active ms-5 hover" aria-current="page" to="/signup" >SignUp</Link>
         </li>
        
        

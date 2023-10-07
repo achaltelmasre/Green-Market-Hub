@@ -4,7 +4,7 @@ export default function AddressForm() {
 
   return (
     <>
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      <button type="button" class=" button buy-now" data-bs-toggle="modal" data-bs-target="#exampleModal">
         Buy Now
       </button>
 

@@ -44,6 +44,9 @@ function Contact() {
 
   return (
     <>
+
+
+
       <Navbar />
 
       <div className="main-background-contact-container">

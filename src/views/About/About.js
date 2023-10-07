@@ -10,11 +10,12 @@ import ImgAchal from "./achal.jpg";
 import ImgArti from "./arti.jpg";
 
 
+
 function About() {
     return (
         <>
+         <Navbar />
             <div className="about-container">
-                <Navbar />
                 <h1 className="main-heading">ABOUT US</h1>
             </div>
 
@@ -74,30 +75,32 @@ function About() {
             </div>
 
             <div className="row  set-margin">
-                <div className="me-2 col-5 ms-2">
+                <div className="me-2 col-5 ms-2 ">
                     <h1> Our Mission 🎯</h1>
                     <p className="fs-5">To source a range of quality fruits from across the globe
                         and deliver them
-                        fresh to customers across India.</p>
+                        fresh to customers across India.  To be the most trusted and preferred 
+                         Indian fruit trading business.</p>
                 </div>
 
 
                 <div className="fs-5 col-6 ms-auto" >
                     <h1>Our Vision 👁️</h1>
-                    <p> To be the most trusted and preferred Indian fruit trading business.
+                    <p> 
                         Our vision calls us to earn trust and create value for our key stakeholders:
-                        Growers: By enabling their fruits reach from their farms to different
-                        regions in India
-                        Wholesalers: By ensuring they receive fruits fresh, every day, every time
-                        Consumers: By satiating their taste preferences through a gamut of fruit
-                        offerings</p>
+                       <b> Growers :</b> By enabling their fruits reach from their farms to 
+                        different
+                        regions. <br/>
+                        <b>Wholesalers :</b> By ensuring they receive fruits fresh, every day, every 
+                         time. <br/>
+                        <b>Consumers :</b> By satiating their taste preferences through a gamut of 
+                         fruits offerings.</p>
                 </div>
 
             </div>
 
 
-
-
+        
             <Footer />
 
         </>

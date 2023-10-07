@@ -34,15 +34,17 @@
 .button{
     text-decoration: none;
     background-color: #ff5a56;
-    padding:5px 17px;
+    padding:4px 17px;
     color: white;
     margin: 10px;
-    width: 200px;
+    width: 115px;
     
 }
 .view{
     background-color: #5aa33a;
     border: 2px solid #5aa33a;
+    padding:5px 17px;
+    
 }
 .view:hover{
     color: #5aa33a;
@@ -119,3 +121,4 @@
     right: 40px;
     cursor: pointer;
  }
+ 

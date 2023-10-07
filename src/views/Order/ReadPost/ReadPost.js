@@ -8,6 +8,34 @@ import PreviewPostCard from "../../../components/PreviewPostCard/PreviewPostCard
 import "./ReadPost.css";
  
 function ReadPost( {price}) {
+
+  const Home = () => {
+    const [card, setcard] = useState([
+      {
+        id:4,
+        Title : "Amrood (Guava)",
+        image : "https://fpsstore.in/cdn/shop/products/green-guava-500x500_360x.png?v=1641460793",
+        price: 60, 
+        delet: "100",
+        grame : "398",
+        Description: "this is my first blog",
+        content: "this is my first blog",
+        author: "ddffg" 
+    },
+    {
+        id:5,
+        Title : "Custard Apple",
+        image : "https://fpsstore.in/cdn/shop/products/CustardAppleGolden.jpg?v=1641812079",
+        price: 180, 
+        delet: "200",
+        grame : "398",
+        Description: "this is my first blog",
+        content: "this is my first blog",
+        author: "qwe" 
+    }
+    ]);
+  }
+
   const { id } = useParams();
   
 
@@ -66,15 +94,41 @@ function ReadPost( {price}) {
                setSubtotal(subtotal=subtotal- subtotal)
            }
   }
+
+
+//   <div className="container-main">
+// {card.map((card, index) => {
+//               const { id, Title, description, priority ,delet,price,image} = card;
+
+//               return (
+//                 <PreviewPostCard
+//                   id={id}
+//                   image={image}
+//                   Title={Title}
+//                   description={description}
+//                   priority={priority}
+//                   delet={delet}
+//                   price={price}
+//                   key={index}
+                 
+//                   obj={card}
+                  
+//                 />
+//               );
+//             })}
+//          </div> 
   
 
   return (
     <>
       
+      {/* (card.map((card, index) => {
+              const { id, Title, description, priority ,delet,price,image} = card;
 
+      return ( */}
       <div className="card-details">
         <div  className="image-div">
-        <img className="imag" src={post.image} alt="image not found" />
+        <img className="imag" src={Post.image} alt="image not found" />
         </div>
         <div className="dis-text">
            
@@ -94,14 +148,10 @@ function ReadPost( {price}) {
         </Link> <br/><br/><br/>
         <span>15 customers are viewing this produc</span> <br/><br/><br/><br/>
         <img src="https://fpsstore.in/cdn/shop/files/trust_800x-compressor_800x.png?v=1637822740" /> <br/><br/><br/><br/>
-
-          
-            {/* <span>SKU:  {Post.grame}</span>
-          <span> By {Post.author}</span>
-          <p>{Post.Description}</p>
-          <p>{Post.content}</p> */}
         </div>
       </div>
+      
+      
     </>
   );
 }
