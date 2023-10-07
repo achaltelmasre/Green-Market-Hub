@@ -75,8 +75,8 @@ export default function SignUp() {
     <>
       < Navbar />
       <div className="signup-form">
-        <h1 className="text-center text-light p-3">Register Form</h1>
-        <form class="row g-3  m-4">
+        {/* <h2 className="text-center text-light pt-3">SignUp Form</h2> */}
+        <form class="row g-3  m-2">
           <div class="col-12">
             <label for="inputAddress" class="form-label ms-2">UserName</label>
             <input type="text" class="form-control" id="inputAddress" 
