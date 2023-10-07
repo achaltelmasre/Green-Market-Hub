@@ -1,5 +1,6 @@
 import "./Footer.css";
 import { Link } from "react-router-dom";
+import logo from "./../../views/Home/img/logo.png"
 
 const Footer = () =>
 { 
@@ -11,7 +12,7 @@ const Footer = () =>
   <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
     
     <div class="me-5 d-none d-sm-block">
-      <span>Get connected with us on social networks:</span>
+      <span>Get connected with Green Hub</span>
     </div>
   
     <div>
@@ -38,14 +39,14 @@ const Footer = () =>
   </section>
 
   <section class="">
-    <div class="container text-md-start mt-5">
+    <div class="container text-md-start mt-5 ">
  
       <div class="row mt-3">
        
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
      
           <h6 class="text-uppercase fw-bold mb-4">
-            <i class="fas fa-gem me-3"></i>Green Market Hub
+               <img src={logo} alt="logo" height="80px" /><span className="text-green fs-2">Green</span>  <span className="text-red fs-2">Hub</span>
           </h6>
           <p>
           It's retail shop for daily needs , widely used by people living in and around
@@ -59,30 +60,30 @@ const Footer = () =>
             Products
           </h6>
           <p>
-            <a href="./../" class="text-reset">React</a>
+            <a href="./../" class="text-reset a">React</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">HTML</a>
+            <a href="#!" class="text-reset a">HTML</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">CSS</a>
+            <a href="#!" class="text-reset a">CSS</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Bootstrap</a>
+            <a href="#!" class="text-reset a">Bootstrap</a>
           </p>
         </div>
   
 
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 ms-5">
          
           <h6 class="text-uppercase fw-bold mb-4">
             Useful links
           </h6>
           <p>
-            <Link  to="/" class="text-reset">Home</Link>
+            <Link  to="/" class="text-reset ">Home</Link>
           </p>
           <p>
-            <Link  to="/about" class="text-reset">About</Link>
+            <Link  to="/about" class="text-reset a ">About</Link>
           </p>
           <p>
             <Link to="/order" class="text-reset">Orders</Link>

@@ -1,23 +1,39 @@
 .nav1{
     background: transparent;
     margin: 0;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     display: flex;
     justify-content: space-around;
+    position: fixed;
+    z-index: 50;
+    width: 100%;
+     padding: -20px; 
+ 
   
 }
 
-.back-remo {
-    background: transparent;
-    margin-bottom: -100px;
-    font-weight: bold;
-    z-index: 10;
+/* .back-remo {
+    /* background: transparent; */
+    /* margin-bottom: -100px; */
+    /* font-weight: bold; */
+    /* z-index: 10; */
     /* position: sticky; */
-}
+/* }  */
 
 .hover:hover{
     border-bottom: 3px solid red !important;
     color: rgb(244, 94, 13) !important;
   
 }
-
+.text-green{
+    color: #5aa33a;
+    font-weight: bold;
+    
+ }
+ .text-red{
+     color:#ff5a56;
+     font-weight: bold;
+ }
+.back-remo{
+    margin-left: 300px;
+}

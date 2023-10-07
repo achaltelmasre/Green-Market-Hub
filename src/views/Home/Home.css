@@ -25,3 +25,14 @@
     left: 350px;
     color: red;
 }
+.home-img-news{
+    height: 300px;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    overflow-y: scroll; 
+    
+}
+.home-img-news::-webkit-scrollbar{
+    width: 5px;
+}

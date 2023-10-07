@@ -6,7 +6,9 @@
     color: #ffffff;
     padding: 1px 24%;
     font-size: 18px;
-    margin-top: 4%;
+    position: absolute;
+    top:100px;
+  
 }
 
 

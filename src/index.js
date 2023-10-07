@@ -11,6 +11,7 @@ import Contact from "./views/Contact/Contact";
 import SignUp from "./views/SignUp/SignUp";
 import Login from "./components/Form/LoginForm/LoginForm";
 import ReadPost from "./views/Order/ReadPost/ReadPost";
+import axios from "axios";
 
 
 const router = createBrowserRouter([
@@ -39,11 +40,6 @@ const router = createBrowserRouter([
   path:"/signup",
   element: <SignUp/>,
 },
-  
-  {
-    path: '/login',
-    element: <Login/>
-  },
   
   {
     path: '/Post/ReadPost/:id',

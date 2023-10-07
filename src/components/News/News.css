@@ -1,0 +1,29 @@
+.news-article-img{
+    height: 100px;
+    width: 150px;
+    padding: 0;
+    margin-top: -30px;
+}
+.news-card{
+    height: 500px;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin:5px;
+    border-bottom: 1px solid red;
+    
+}
+.news-title{
+    
+}
+.news-description{
+    margin-top: -10px;
+}
+.main-news-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+   

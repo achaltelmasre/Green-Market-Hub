@@ -66,7 +66,7 @@ function About() {
                 </div>
 
                 <div className="mt-4">
-                    <AboutCard Img={ImgArti} name="Arati mendhe" tag="Front-end Developer"
+                    <AboutCard Img={ImgArti} name="Aarti medhe" tag="Front-end Developer"
                         education="BCA" linkedInLink="https://www.linkedin.com/in/aartimedhe/"
                         githubLink="https://github.com/aaru-01" 
                          peerlistLink="https://peerlist.io/aartimedhe" />
