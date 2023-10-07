@@ -44,6 +44,10 @@ function Home(){
                     </Carousel.Item>
                 </Carousel>
             </div>
+            <div>
+
+            </div>
+            
             <div className="text-center">
                 <p className="display-4 text-center p-4 pt-5"> Fresh Fruits Online & Fresh Vegetables Online </p>
 
@@ -71,7 +75,8 @@ function Home(){
                     text="Quality and A grade grocery right from the farms at your doorstep." />
 
                     <DeliveryCard  img={delivery} name="FREE HOME DELIVERY"
-                    text="We offer free home delivery to all our clients. all  you have to do is just make a call."/>
+                    text="We offer free home delivery to all our clients. all  you have to do is 
+                     just make a call."/>
 
                     <DeliveryCard  img={store} name="PICK UP FROM OUR STORE"
                     text="We have 2 store that have prompt service. so go and check out."/>
