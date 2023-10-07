@@ -12,6 +12,7 @@ import SignUp from "./views/SignUp/SignUp";
 import Login from "./components/Form/LoginForm/LoginForm";
 import ReadPost from "./views/Order/ReadPost/ReadPost";
 
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -49,6 +50,7 @@ const router = createBrowserRouter([
     element: <ReadPost/>
 
   },
+  
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

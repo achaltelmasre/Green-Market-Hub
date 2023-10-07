@@ -14,10 +14,10 @@ export default function Login() {
 
     
   const HandleSubmit = (e) => {
-    e.preventDefault();
+    
        const getData=localStorage.getItem('userdata')
       
-      const sotreData=JSON.parse(getData)
+      const sotreData=JSON.parse(getData);
     console.log(sotreData);
 
     const matchData=sotreData.find((obj)=>{
@@ -59,7 +59,7 @@ export default function Login() {
 
 
           <div class="col-12">
-            <button type="submit" class="btn btn-signup btn-login" 
+            <button type="button" class="btn btn-signup btn-login" 
             onClick={HandleSubmit} > LogIn </button>
               <hr />
             Don't have an account ? <Link to="/signup">SignUp</Link>
