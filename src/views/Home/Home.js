@@ -44,6 +44,10 @@ function Home(){
                     </Carousel.Item>
                 </Carousel>
             </div>
+            <div>
+
+            </div>
+            
             <div className="text-center">
                 <p className="display-4 text-center p-4 pt-5"> Fresh Fruits Online & Fresh Vegetables Online </p>
 

@@ -1,0 +1,39 @@
+.input-type {
+   margin: 12px 5% ;
+    width: 85%;
+    padding: 10px;
+    border-radius:5px ;
+    height: 42px;
+}
+.btn-deliver {
+    background-color: rgb(23, 168, 23);
+    color: white;
+    border: none;
+    margin: 5px auto;
+    width: 55%;
+    padding: 8px 12px;
+     border-radius:5px ;
+}
+.modal-body {
+    padding: 20px;
+}
+.modal-title {
+ margin-left: 35%;
+    font-size: 33px;
+
+}
+/* .button{
+    
+    background-color: #ff5a56;
+    border: 2px solid #ff5a56;
+    
+    color: white;
+    text-decoration: none;
+    background-color: #ff5a56;
+    padding:5px 17px;
+    color: white;
+    margin: 10px;
+    width: 115px;
+    
+   
+}  */

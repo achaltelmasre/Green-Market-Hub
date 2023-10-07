@@ -5,6 +5,7 @@
     opacity: 0.9;
     background-size: cover;
     height: 100vh;
+    margin-top: 60px;
 }
 
 .contact-container-heading4 {
@@ -136,7 +137,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 30px;
+    margin: 17px;
     margin-left: 280px;
     margin-right: 280px;
 }
@@ -153,6 +154,13 @@
     text-align: center;
     padding-right: 20px;
 }
+.contact-user-name-msg{
+    padding-left: 20px;
+    padding: 8px;
+    height: 90px;
+    text-align: center;
+    padding-right: 20px;
+}
 
 .form-radio-button-tagline {
     color: white;
@@ -160,21 +168,24 @@
 
 .contact-pg-btn-submit {
     padding: 5px;
-    border:  5px double white;
+    color: white;
+    background-color: #ff5a56;
     padding-left: 10px;
     padding-right: 10px;
-    margin-left: 190px;
+    margin-left: 180px;
     margin-right: 190px;
-    border-radius: 5px;
+    border-radius: 10px;
+    border: none;
 }
 .contact-pg-btn-submit:hover {
     padding: 5px;
-    border:  5px double white;
-    background-color: black;
+    border:  3px solid white;
+    background-color:#ff5a56;
     color: white;
     padding-left: 10px;
     padding-right: 10px;
-    margin-left: 190px;
+    margin-left: 180px;
     margin-right: 190px;
     border-radius: 5px;
+    background: transparent;
 }
