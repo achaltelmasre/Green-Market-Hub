@@ -1,20 +1,52 @@
 .List-contaienr-review-pg{
-    width: 400px;
+    width: 350px;
+    height: 250px;
     margin: 8px;
    margin-left: 55px;
-    padding: 5px;
+    padding: 15px;
     border-radius: 10px;
     border: 1px solid #ccc;
     box-shadow: 0 2px 4px 2px rgba(0,0,0,0.2);
-position: relative;
+   position: relative;
+   background-color: antiquewhite;
+  
 }
 
 .review-content{
     margin: 0;
     color: green;
 }
-.Rating-reviw{
+
+ .ReviewList-main-container{
+    display: flex;
+    flex-wrap: wrap;
+
+} 
+.review-edit-icon{
     position: absolute;
-    right: 10px;
-    bottom: -10px;
+    bottom: 7px;
+    right:5px;
+    cursor: pointer;
+    padding: 3px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 1px #046f95; 
+   
+}
+@media screen and(max-width:600px){
+    .List-contaienr-review-pg{
+        width: 300px;
+        height: 100px;
+        /* margin: 8px; */
+       /* margin-left: 10px; */
+        /* padding: 10px; */
+        margin-right: 30px;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        box-shadow: 0 2px 4px 2px rgba(0,0,0,0.2);
+       /* position: relative; */
+       background-color: antiquewhite;
+      
+    }
+
+    
 }

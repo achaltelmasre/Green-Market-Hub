@@ -7,7 +7,7 @@ At [Green Market Hub], we are dedicated to bringing you the freshest and finest 
 
 **website URL : https://github.com/achaltelmasre/green-market-hub**
 
-**Live Website : https://github.com/achaltelmasre/green-market-hub**
+**Live Website : https://green-market-hub.vercel.app/**
 
 ### Our Mission
 To source a range of quality fruits from across the globe and deliver them fresh to customers across India.

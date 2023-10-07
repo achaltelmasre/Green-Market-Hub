@@ -47,7 +47,7 @@ showToast('Contact Details saved successfully!', 'success', 3000);
 
       <Navbar/>
 
-      <Navbar />
+ 
 
       <div className="main-background-contact-container">
         <h5 className="contact-container-heading4">Always Available Whenever You Need Us...</h5>
