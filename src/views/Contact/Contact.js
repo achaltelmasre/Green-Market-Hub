@@ -45,6 +45,7 @@ showToast('Contact Details saved successfully!', 'success', 3000);
   return (
     <>
       <Navbar />
+  
       <div className="main-background-contact-container">
         <h5 className="contact-container-heading4">Always Available Whenever You Need Us...</h5>
         <h1 className="contact-page-tagline">We’re excited to hear from you...</h1>
