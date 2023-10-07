@@ -1,11 +1,11 @@
 .main-background-contact-container {
-    margin: 0px;
+    margin-top: 70px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
         url(./img/img-1.jpg);
-    opacity: 0.9;
+    opacity: 10;
     background-size: cover;
     height: 100vh;
-    margin-top: 60px;
+ 
 }
 
 .contact-container-heading4 {
@@ -48,10 +48,6 @@
 } */
 
 .contact-main-card-containeer {
-    /* display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin: 50px; */
     margin-top: 80px;
     display: flex;
     flex-direction: row;
@@ -130,6 +126,7 @@
     background-image: linear-gradient(rgba(65, 64, 64, 0.9), rgba(58, 57, 57, 0.8)), url(./img//shoping-women1.jpg);
     background-size: cover;
     height: 100vh;
+    margin-bottom: -24px;
 }
 
 
@@ -147,6 +144,11 @@
     color: white;
     padding-top: 40px;
 }
+.contact-form-heading-tohere{
+    text-align: center;
+    color: white;
+    padding-top: 40px;
+}
 
 .contact-user-name {
     padding-left: 20px;
@@ -154,7 +156,8 @@
     text-align: center;
     padding-right: 20px;
 }
-.contact-user-name-msg{
+
+.contact-user-name-msg {
     padding-left: 20px;
     padding: 8px;
     height: 90px;
@@ -177,10 +180,11 @@
     border-radius: 10px;
     border: none;
 }
+
 .contact-pg-btn-submit:hover {
     padding: 5px;
-    border:  3px solid white;
-    background-color:#ff5a56;
+    border: 3px solid white;
+    background-color: #ff5a56;
     color: white;
     padding-left: 10px;
     padding-right: 10px;
@@ -188,4 +192,139 @@
     margin-right: 190px;
     border-radius: 5px;
     background: transparent;
+}
+.map-cotainerr{
+    margin-top: 1px;
+}
+
+
+@media screen and (max-width:600px) {
+    .contact-main-card-containeer {
+        margin-top: 20px;
+        margin-bottom: 300px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+        background: none;
+    }
+
+    .contact-bg-img2 {
+        /* margin-top: -90px; */
+        background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
+            url(./img/bg-1.jpg);
+        opacity: 10;
+        background-size: cover;
+        height: 150vh;
+        padding-top: 300px;
+    }
+
+    .contact-map {
+        height: 430px;
+    width: 329px;
+    margin: 0;
+    /* margin-top: 900px; */
+    margin-left: 17px;
+    }
+    .map-cotainerr{
+        margin-top: 700px;
+    }
+
+    .contact-map2 {
+        display: none;
+    }
+
+    .contact-main-card-containeer-2 {
+        display: none;
+      
+    }
+    .contact-form-heading1 {
+        text-align: center;
+        color: white;
+        padding-top: 30px;
+       padding-bottom: -290px;
+    }
+    .contact-form-heading-tohere{
+        text-align: center;
+        color: white;
+        /* padding-top: 30px; */
+        margin-top: 70px;
+    }
+    
+
+/* media query apply to form  */
+
+    .contact-main-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 17px;
+        margin-top: 4px;
+         /* margin-right: 280px; */
+     }
+    
+    .contact-form-heading1 {
+        text-align: center;
+        color: white;
+        padding-top: 190px;
+    }
+    .contact-form-heading-tohere{
+        text-align: center;
+        color: white;
+        margin-top: 20px;
+    }
+    
+    .contact-user-name {
+        padding-left: 20px;
+        padding: 8px;
+        text-align: center;
+        padding-right: 20px;
+    }
+    
+    .contact-user-name-msg {
+        padding-left: 20px;
+        padding: 8px;
+        height: 70px;
+        text-align: center;
+        padding-right: 20px;
+    }
+    
+    .form-radio-button-tagline {
+        color: white;
+    }
+    
+    .contact-pg-btn-submit {
+        background-color: #ff5a56;
+        color: white;
+        margin-left: 120px;
+        height: 40px;
+        width: 100px;
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 10px;
+        border: none;
+    }
+    
+    .contact-pg-btn-submit:hover {
+        background-color: #ff5a56;
+        color: white;
+        border: 3px solid white;
+        background: transparent;
+        margin-left: 120px;
+        height: 40px;
+        width: 100px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 10px;
+    }
+    .contact-bg-img-3-women-shoping {
+        /* linear-gradient(rgba(64, 64, 64, 0.9), rgba(0, 0, 0, 0.8)), */
+        /* background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
+        url(./img/shpong-women3.jpg); */
+        background-image: linear-gradient(rgba(65, 64, 64, 0.9), rgba(58, 57, 57, 0.8)), url(./img//shoping-women1.jpg);
+        background-size: cover;
+        height: 130vh;
+        margin-bottom: -25px;
+    }
+
 }

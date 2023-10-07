@@ -13,39 +13,42 @@ import showToast from "crunchy-toast";
 
 function Contact() {
 
-  const [yourName, setYourName]= useState('');
-  const [yourPhoneNumber, setYourPhoneNumber]= useState('');
-  const [yourEmail, setYourEmail]= useState('');
-  const [yourMessage, setYourMessage]= useState('');
+  const [yourName, setYourName] = useState('');
+  const [yourPhoneNumber, setYourPhoneNumber] = useState('');
+  const [yourEmail, setYourEmail] = useState('');
+  const [yourMessage, setYourMessage] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-const formData = {
-  yourName:yourName,
-  yourPhoneNumber:yourPhoneNumber,
-  yourEmail:yourEmail,
-  yourMessage:yourMessage,
-}
+    const formData = {
+      yourName: yourName,
+      yourPhoneNumber: yourPhoneNumber,
+      yourEmail: yourEmail,
+      yourMessage: yourMessage,
+    }
 
-const formDataString = JSON.stringify(formData);
-localStorage.setItem("formData", formDataString);
+    const formDataString = JSON.stringify(formData);
+    localStorage.setItem("formData", formDataString);
 
-setYourName("");
-setYourPhoneNumber("");
-setYourEmail("");
-setYourMessage("");
+    setYourName("");
+    setYourPhoneNumber("");
+    setYourEmail("");
+    setYourMessage("");
 
 
-// alert(" Contact Form data saved successfully!");
-showToast('Contact Details saved successfully!', 'success', 3000);
-};
+    // alert(" Contact Form data saved successfully!");
+    showToast('Contact Details saved successfully!', 'success', 3000);
+  };
 
 
   return (
     <>
+
+
+
       <Navbar />
-  
+
       <div className="main-background-contact-container">
         <h5 className="contact-container-heading4">Always Available Whenever You Need Us...</h5>
         <h1 className="contact-page-tagline">We’re excited to hear from you...</h1>
@@ -57,10 +60,12 @@ showToast('Contact Details saved successfully!', 'success', 3000);
         </div>
       </div>
       <div className="contact-bg-img2">
-        <iframe className="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14028.849865557753!2d77.08816623586222!3d28.47314742434485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d18d530a1809f%3A0xf8af202a245b1ba1!2sDLF%20Phase%201%2C%20Sector%2026%2C%20Gurugram%2C%20Haryana%20122002!5e0!3m2!1sen!2sin!4v1696361164573!5m2!1sen!2sin"></iframe>
-        <iframe className="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14036.1818104376!2d77.04098483582372!3d28.417885334690716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d229b56d6b74f%3A0x5cad26a539a04ab5!2sSouth%20City%20II%2C%20Sector%2049%2C%20Gurugram%2C%20Haryana%20122018!5e0!3m2!1sen!2sin!4v1696361399710!5m2!1sen!2sin"></iframe>
+        <div className="map-cotainerr">
+          <iframe className="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14028.849865557753!2d77.08816623586222!3d28.47314742434485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d18d530a1809f%3A0xf8af202a245b1ba1!2sDLF%20Phase%201%2C%20Sector%2026%2C%20Gurugram%2C%20Haryana%20122002!5e0!3m2!1sen!2sin!4v1696361164573!5m2!1sen!2sin"></iframe>
+          <iframe className="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14036.1818104376!2d77.04098483582372!3d28.417885334690716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d229b56d6b74f%3A0x5cad26a539a04ab5!2sSouth%20City%20II%2C%20Sector%2049%2C%20Gurugram%2C%20Haryana%20122018!5e0!3m2!1sen!2sin!4v1696361399710!5m2!1sen!2sin"></iframe>
 
-        <iframe className="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7009.635189460766!2d77.22417818832608!3d28.545201877529934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce230027ea8db%3A0xb193f4460c33c832!2sPanchsheel%20Enclave%2C%20New%20Delhi%2C%20Delhi%20110017!5e0!3m2!1sen!2sin!4v1696361680107!5m2!1sen!2sin"></iframe>
+          <iframe className="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7009.635189460766!2d77.22417818832608!3d28.545201877529934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce230027ea8db%3A0xb193f4460c33c832!2sPanchsheel%20Enclave%2C%20New%20Delhi%2C%20Delhi%20110017!5e0!3m2!1sen!2sin!4v1696361680107!5m2!1sen!2sin"></iframe>
+        </div>
       </div>
       <div className="contact-conatiner3-bg">
         <div className="contact-main-card-containeer-2">
@@ -68,6 +73,7 @@ showToast('Contact Details saved successfully!', 'success', 3000);
           <ContactCard Img={img2} Heading={'5, Community Centre (half ground floor, Basant Lok, Vasant Vihar, New Delhi, Delhi 110057'} Text={'+91 564 987 3458'} Img2={img3} Text2={'VASANT VIHAR, NEW DELHI'} />
           <ContactCard Img={img2} Heading={'Plot no 1, Rd Number 51, West Punjabi Bagh, New Delhi, 110026'} Text={'+91 234 045 8790'} Img2={img3} Text2={'PUNJABI BAGH, NEW DELHI'} />
         </div>
+
       </div>
       <div className="contact-bg-img3">
         <iframe className="contact-map2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14018.357237148517!2d77.18537644072495!3d28.552061600847196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce20d230fd6d7%3A0x72a9671729ecb984!2sAurobindo%20Market%2C%20Sri%20Aurobindo%20Marg%2C%20Block%20C%202%2C%20Bhim%20Nagri%2C%20Hauz%20Khas%2C%20New%20Delhi%2C%20Delhi%20110016!5e0!3m2!1sen!2sin!4v1696363282518!5m2!1sen!2sin"></iframe>
@@ -78,59 +84,59 @@ showToast('Contact Details saved successfully!', 'success', 3000);
         <h4 className="email-address-contact-page">info@freshproduce.co.in</h4>
       </div>
       <div className="contact-bg-img-3-women-shoping">
-<form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit}>
 
-<h2 className="contact-form-heading1">Say Hello.!!</h2>
-<h4 className="contact-form-heading1">We Would Love To Hear From You. Let’s Have A Talk</h4><br/><br/>
-<div className="contact-main-form">
+          <h2 className="contact-form-heading1">Say Hello.!!</h2>
+          <h4 className="contact-form-heading-tohere">We Would Love To Hear From You. Let’s Have A Talk</h4><br /><br />
+          <div className="contact-main-form">
 
-<input type="text"
- placeholder="Your Name" 
- className="contact-user-name" 
- required
- onChange={(e)=>{
-  setYourName(e.target.value);
- }}
- value={yourName}
- /><br/>
-
-
-<input type="text"
- placeholder="Your Phone Number" 
- className="contact-user-name"
-  required
-  onChange={(e)=>{
-    setYourPhoneNumber(e.target.value);
-   }}
-   value={yourPhoneNumber}
-  /><br/>
+            <input type="text"
+              placeholder="Your Name"
+              className="contact-user-name"
+              required
+              onChange={(e) => {
+                setYourName(e.target.value);
+              }}
+              value={yourName}
+            /><br />
 
 
-<input type="email" 
-placeholder="Your Email"
- className="contact-user-name"
-  required
-  onChange={(e)=>{
-    setYourEmail(e.target.value);
-   }}
-   value={yourEmail}
-  /><br/>
+            <input type="text"
+              placeholder="Your Phone Number"
+              className="contact-user-name"
+              required
+              onChange={(e) => {
+                setYourPhoneNumber(e.target.value);
+              }}
+              value={yourPhoneNumber}
+            /><br />
 
 
-<input type="text" 
-placeholder="Your Message" 
-className="contact-user-name-msg"
- required
- onChange={(e)=>{
-  setYourMessage(e.target.value);
- }}
- value={yourMessage}
- /><br/>
-{/* <input type="radio"/><span className="form-radio-button-tagline">I consent to Fresh Produce Shoppe | Buy Fruits in Gurgaon collecting my details through this form.</span><br/> */}
-<button type="submit" className="contact-pg-btn-submit">SUBMIT</button>
-</div>
-</form>
-      </div>
+            <input type="email"
+              placeholder="Your Email"
+              className="contact-user-name"
+              required
+              onChange={(e) => {
+                setYourEmail(e.target.value);
+              }}
+              value={yourEmail}
+            /><br />
+
+
+            <input type="text"
+              placeholder="Your Message"
+              className="contact-user-name-msg"
+              required
+              onChange={(e) => {
+                setYourMessage(e.target.value);
+              }}
+              value={yourMessage}
+            /><br />
+            {/* <input type="radio"/><span className="form-radio-button-tagline">I consent to Fresh Produce Shoppe | Buy Fruits in Gurgaon collecting my details through this form.</span><br/> */}
+            <button type="submit" className="contact-pg-btn-submit">SUBMIT</button>
+          </div>
+        </form>
+      </div><br />
 
       <Footer />
     </>

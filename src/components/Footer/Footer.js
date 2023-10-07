@@ -46,7 +46,7 @@ const Footer = () =>
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
      
           <h6 class="text-uppercase fw-bold mb-4">
-               <img src={logo} alt="logo" height="80px" />Green Market Hub
+               <img src={logo} alt="logo" height="80px" /><span className="text-green fs-2">Green</span>  <span className="text-red fs-2">Hub</span>
           </h6>
           <p>
           It's retail shop for daily needs , widely used by people living in and around
@@ -74,7 +74,7 @@ const Footer = () =>
         </div>
   
 
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 ms-5">
          
           <h6 class="text-uppercase fw-bold mb-4">
             Useful links
