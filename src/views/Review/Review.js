@@ -41,7 +41,27 @@ export const Review = () => {
     if(list && list.length > 0){
         setReviewList(list)
     }
-  }, [])
+}, [])
+
+    // const [Name, setName] = useState('')
+    // const [Content, setContent] = useState('')
+    // const [Rating, setRating] = useState('')
+
+    // useEffect(()=>{
+    //         const tasklist = JSON.parse(localStorage.getItem('Reviewlist'))
+    // setReviewList(tasklist)
+
+    // },[])
+
+   
+
+//     const saveListToLocalStorage = (list) => {
+//         localStorage.setItem('Reviewlist', JSON.stringify(list))
+
+//     }
+//   }, [])
+
+
 
   const clearInputFields = (review) => {
     setName('');
@@ -265,8 +285,6 @@ const addReviewToList = () => {
                 <div className="flex-contsiner-review p-2 ">
 
                     <div className="reviews-show-container mb-5 ">
-
-                        <h4 className="text-center show-review">Show Reviews</h4>
 
                         <div className="mapping-reviws p-2 m-5 mb-5">
                             {
