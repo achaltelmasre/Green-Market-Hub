@@ -13,6 +13,7 @@ import Login from "./components/Form/LoginForm/LoginForm";
 import ReadPost from "./views/Order/ReadPost/ReadPost";
 import axios from "axios";
 
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -39,12 +40,17 @@ const router = createBrowserRouter([
   path:"/signup",
   element: <SignUp/>,
 },
+{
+  path:"/login",
+  element: <Login/>,
+},
   
   {
     path: '/Post/ReadPost/:id',
     element: <ReadPost/>
 
   },
+  
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
