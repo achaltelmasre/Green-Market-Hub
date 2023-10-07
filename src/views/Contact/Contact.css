@@ -1,8 +1,8 @@
 .main-background-contact-container {
-    margin: 0px;
+    margin-top: 70px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
         url(./img/img-1.jpg);
-    opacity: 0.9;
+    opacity: 10;
     background-size: cover;
     height: 100vh;
 }
@@ -47,10 +47,6 @@
 } */
 
 .contact-main-card-containeer {
-    /* display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin: 50px; */
     margin-top: 80px;
     display: flex;
     flex-direction: row;
@@ -153,7 +149,8 @@
     text-align: center;
     padding-right: 20px;
 }
-.contact-user-name-msg{
+
+.contact-user-name-msg {
     padding-left: 20px;
     padding: 8px;
     height: 90px;
@@ -176,10 +173,11 @@
     border-radius: 10px;
     border: none;
 }
+
 .contact-pg-btn-submit:hover {
     padding: 5px;
-    border:  3px solid white;
-    background-color:#ff5a56;
+    border: 3px solid white;
+    background-color: #ff5a56;
     color: white;
     padding-left: 10px;
     padding-right: 10px;
@@ -187,4 +185,42 @@
     margin-right: 190px;
     border-radius: 5px;
     background: transparent;
+}
+
+
+@media screen and (max-width:600px) {
+    .contact-main-card-containeer {
+        margin-top: 20px;
+        margin-bottom: 300px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+        background: none;
+    }
+
+    .contact-bg-img2 {
+        /* margin-top: -90px; */
+        background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
+            url(./img/bg-1.jpg);
+        opacity: 10;
+        background-size: cover;
+        height: 150vh;
+        padding-top: 300px;
+    }
+
+    .contact-map {
+        height: 430px;
+    width: 329px;
+    margin: 0;
+    /* margin-top: 900px; */
+    margin-left: 17px;
+    }
+
+    .contact-map2 {
+        display: none;
+    }
+
+    .contact-main-card-containeer-2 {
+        display: none;
+    }
 }
