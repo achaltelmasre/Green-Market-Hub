@@ -3,7 +3,10 @@ import { useState } from "react";
 import PreviewPostCard from "./../../../components/PreviewPostCard/PreviewPostCard";
 import showToast from "crunchy-toast";
 import { saveListToLocalStorage } from "./../../../components/Util/LocalStorage";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark, faPen } from "@fortawesome/free-solid-svg-icons";
 import "./FruitcardAdd.css";
+
 import blogData from "./../../../configs/blogs-data.json";
 import vegetableData from "./../../../configs/vegetable-data.json";
 
@@ -17,9 +20,12 @@ const Home = () => {
       price: 60,
       delet: "100",
       grame: "398",
+      
       Description: "this is my first blog",
       content: "this is my first blog",
       author: "ddffg",
+      edit: "🖊️",
+      deletsymbol: "<FontAwesomeIcon icon={faXmark} />"
     },
     {
       id: 8,
@@ -32,6 +38,8 @@ const Home = () => {
       Description: "this is my first blog",
       content: "this is my first blog",
       author: "qwe",
+      edit: "🖊️",
+      deletsymbol: "<FontAwesomeIcon icon={faXmark} />"
     },
     {
       id: 9,
@@ -44,6 +52,8 @@ const Home = () => {
       Description: "this is my first blog",
       content: "this is my first blog",
       author: "qwe",
+      edit: "🖊️",
+      deletsymbol: "<FontAwesomeIcon icon={faXmark} />"
     },
     {
       id: 10,
@@ -87,11 +97,12 @@ const Home = () => {
   const [admin, setAdmin] = useState();
 
 
-
+console.log(price);
 
 useEffect(() => {
   const filteredContact = (vegetableData,blogData).filter((item) => {
     const Title = item.Title.toLowerCase();
+    const price = item.price.toString();
     const query = searchTerm.toLowerCase();
  
     return Title.includes(query);
@@ -172,17 +183,28 @@ useEffect(() => {
   };
 
  
-  const removeTaskfromList = (obj) => {
-    const index = card.indexOf(obj);
-
-    const tempArray = card;
-    tempArray.splice(index, 1);
-
-    setcard([...tempArray]);
-
-    saveListToLocalStorage(tempArray);
-    showToast("Task deledet successfully!", "alert", 3000);
-  };
+ 
+    const removeProductfromList = (obj) => {
+      try{
+      const index = card.indexOf(obj);
+  
+      const tempArray = card;
+      tempArray.splice(index, 1);
+     
+      setcard([...tempArray]);
+  
+      saveListToLocalStorage(tempArray);
+      showToast("Task deledet successfully!", "alert", 3000);
+    }
+    catch(e){
+      showToast(
+        "Alert! Please Your account  login and try again",
+        "alert",
+        6000
+      );
+    }
+  }
+  
 
   const setTaskEditable = (id) => {
     setIsEdit(true);
@@ -241,7 +263,7 @@ useEffect(() => {
   };
 
   function admindata() {
-    if (admin == 9373700515 || admin == 9373700516 || admin == { price }) {
+    if (admin == 9373700515 || admin == 9373700516 || admin == { price } || admin==10203040 || admin== 'Abhijeet007' || admin==7799756791) {
       console.log("hi");
       <h1>hello</h1>;
       setAdmin(true);
@@ -298,6 +320,8 @@ useEffect(() => {
                     delet,
                     price,
                     image,
+                    edit,
+                    deletsymbol,
                   } = cards;
 
                   return (
@@ -310,7 +334,10 @@ useEffect(() => {
                       delet={delet}
                       price={price}
                       key={index}
-                      removeTaskfromList={removeTaskfromList}
+                      edit ={<FontAwesomeIcon icon={faPen} />}
+                      deletsymbol={<FontAwesomeIcon icon={faXmark} />}
+                      
+                      removeProductfromList={removeProductfromList}
                       obj={card}
                       setTaskEditable={setTaskEditable}
                     />
