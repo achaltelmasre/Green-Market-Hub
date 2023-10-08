@@ -64,11 +64,11 @@ function Order(){
         
            <Post/>
            {/* <PreviewPostCard/> */}
-          {
+          {/* {
             getOrderInfo.map((obj,index)=>{
               <h1>{obj.productName}</h1>
             })
-          }
+          } */}
 {/* <AddressForm/> */}
            <Footer/>
            

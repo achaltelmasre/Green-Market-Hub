@@ -14,6 +14,8 @@ import grocery from "./img/grocery.png";
 import delivery from "./img/free-delivery.png";
 import store from "./img/store.png";
 import { Carousel } from "react-bootstrap";
+import {Link} from "react-router-dom";
+import order from "./../../views/Order/Order"
 
 
 import "./Home.css";
@@ -65,9 +67,11 @@ function Home(){
             </div>
 
             <div className="d-flex flex-wrap justify-content-center">
-                    <HomeCard img={fruit} name="FRUITS" />
-                    <HomeCard img={veg} name="VEGETABLES"/>
-                    <HomeCard img={masale} name="MASALE"/>
+                <Link to="/order" className="link"><HomeCard img={fruit} name="FRUITS" /> </Link>
+               
+          
+                <Link to="/order" className="link"> <HomeCard img={veg} name="VEGETABLES"/>  </Link> 
+                <Link to="/order"className="link" >  <HomeCard img={masale} name="MASALE"/> </Link>
             </div>
 
 

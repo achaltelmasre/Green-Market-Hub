@@ -11,7 +11,7 @@ import "./News.css"
    
     ;
         const loadNews = async () =>{
-            const response = await axios.get("https://newsapi.org/v2/everything?q=fruit&from=2023-09-07&sortBy=publishedAt&apiKey=dd28cfa9cf73406dbe95670f718ca641");
+            const response = await axios.get("https://newsapi.org/v2/everything?q=vegetable&from=2023-09-07&sortBy=publishedAt&apiKey=dd28cfa9cf73406dbe95670f718ca641");
             console.log(response.data.articles);
            setNews(response.data.articles);
         }

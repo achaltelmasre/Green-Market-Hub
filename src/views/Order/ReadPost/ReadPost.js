@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import blogData from "./../../../configs/blogs-data.json";
 import vegetableData from "./../../../configs/vegetable-data.json"
 import Post from "./../Posts/Post";
+import AddressForm from "../../../components/Form/AddressForm";
 import FruitcardAdd from "./../FruitcardAdd/FruitcardAdd"
 import PreviewPostCard from "../../../components/PreviewPostCard/PreviewPostCard";
 import "./ReadPost.css";
@@ -144,7 +145,7 @@ function ReadPost( {price}) {
 
   return (
     <>
-      <Navbar/> 
+    <div className="readpost-nav">  <Navbar/> </div>
       {/* (card.map((card, index) => {
               const { id, Title, description, priority ,delet,price,image} = card;
 
@@ -166,9 +167,13 @@ function ReadPost( {price}) {
           </p>
           <p className="sub">Subtotal:{dataofprice*main} </p>
           
-          <Link className="buttonn buy-now" to={`/Post/ReadPost/${id}`}>
+          {/* <Link className="buttonn buy-now" to={`/Post/ReadPost/${id}`}>
           Buy Now
-        </Link> <br/><br/><br/>
+        </Link> */}
+
+        <AddressForm/>
+        
+         <br/><br/><br/>
         <span>15 customers are viewing this produc</span> <br/><br/><br/><br/>
         <img src="https://fpsstore.in/cdn/shop/files/trust_800x-compressor_800x.png?v=1637822740" /> <br/><br/><br/><br/>
         </div>

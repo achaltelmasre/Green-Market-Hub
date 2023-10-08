@@ -263,7 +263,7 @@ useEffect(() => {
   };
 
   function admindata() {
-    if (admin == 9373700515 || admin == 9373700516 || admin == { price } || admin==10203040 || admin== 'Abhijeet007' || admin==7799756791) {
+    if (admin == 9373700515 || admin == 9373700516 || admin == { price } || admin==10203040 || admin== 'Abhijeet007' || admin==7798756791) {
       console.log("hi");
       <h1>hello</h1>;
       setAdmin(true);

@@ -37,3 +37,7 @@
 .home-img-news::-webkit-scrollbar{
     width: 5px;
 }
+.link{
+    text-decoration: none;
+    color: black;
+}
