@@ -1,9 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 // import { useState } from "react";
+import Navbar from "../../../components/Navbar/Navbar";
+import Footer from "../../../components/Footer/Footer";
 import { Link } from "react-router-dom";
 import blogData from "./../../../configs/blogs-data.json";
+import vegetableData from "./../../../configs/vegetable-data.json"
 import Post from "./../Posts/Post";
+import FruitcardAdd from "./../FruitcardAdd/FruitcardAdd"
 import PreviewPostCard from "../../../components/PreviewPostCard/PreviewPostCard";
 import "./ReadPost.css";
  
@@ -28,6 +32,7 @@ function ReadPost( {price}) {
         image : "https://fpsstore.in/cdn/shop/products/CustardAppleGolden.jpg?v=1641812079",
         price: 180, 
         delet: "200",
+        
         grame : "398",
         Description: "this is my first blog",
         content: "this is my first blog",
@@ -59,6 +64,24 @@ function ReadPost( {price}) {
       }
     });
   }, [id]);
+
+  useEffect(() => {
+    vegetableData.forEach((postObj) => {
+      if (postObj.id == id) {
+        setPost(postObj);
+        setDataofprice(postObj.price)
+      }
+    });
+  }, [id]);
+
+  // useEffect(() => {
+  //   card.forEach((postObj) => {
+  //     if (postObj.id == id) {
+  //       setPost(postObj);
+  //       setDataofprice(postObj.price)
+  //     }
+  //   });
+  // }, [id]);
 
   let [main, setMain] = useState(1)
   let[subtotal, setSubtotal] = useState(180)
@@ -121,14 +144,14 @@ function ReadPost( {price}) {
 
   return (
     <>
-      
+      <Navbar/> 
       {/* (card.map((card, index) => {
               const { id, Title, description, priority ,delet,price,image} = card;
 
       return ( */}
       <div className="card-details">
         <div  className="image-div">
-        <img className="imag" src={Post.image} alt="image not found" />
+        <img className="imag" src={post.image} alt="image not found" />
         </div>
         <div className="dis-text">
            
@@ -151,7 +174,7 @@ function ReadPost( {price}) {
         </div>
       </div>
       
-      
+      <Footer/>
     </>
   );
 }

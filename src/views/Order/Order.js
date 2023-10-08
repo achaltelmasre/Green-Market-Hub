@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Post from "./Posts/Post";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck,faTruckFast, faShop, faBagShopping } from "@fortawesome/free-solid-svg-icons";
@@ -7,9 +7,18 @@ import PreviewPostCard from "../../components/PreviewPostCard/PreviewPostCard";
 import FruitcardAdd from './FruitcardAdd/FruitcardAdd';
 import  Navbar  from "./../../components/Navbar/Navbar";
 import Footer from './../../components/Footer/Footer';
+import AddressForm from "../../components/Form/AddressForm";
 import "./Order.css";
+// import AddressForm from "../../components/Form/AddressForm";
 
 function Order(){
+
+
+
+   const getOrderInfo=JSON.parse(localStorage.getItem('orderinfo'))
+    console.log(getOrderInfo)
+ 
+
     return(
         <>
            < Navbar/>  
@@ -55,8 +64,14 @@ function Order(){
         
            <Post/>
            {/* <PreviewPostCard/> */}
-
+          {
+            getOrderInfo.map((obj,index)=>{
+              <h1>{obj.productName}</h1>
+            })
+          }
+{/* <AddressForm/> */}
            <Footer/>
+           
         </>
     )
 }

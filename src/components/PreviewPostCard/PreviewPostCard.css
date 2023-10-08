@@ -1,7 +1,7 @@
 .preview-post-card{
 
- /* box-shadow: 0 2px 20px 0 rgb(175, 171, 171);   */
- border: 1px solid rgb(32, 31, 31);
+ box-shadow: 0 2px 20px 0 rgb(175, 171, 171);  
+ /* border: 1px solid rgb(32, 31, 31); */
  display:block;
  position: relative;
  margin: 30px;
@@ -117,8 +117,10 @@
  }
  .card-edit-icon{
    position: absolute;
-   bottom: 5px;
-    right: 40px;
+   top: 20px;
+    left: 20px;
     cursor: pointer;
  }
+ 
+ 
  
