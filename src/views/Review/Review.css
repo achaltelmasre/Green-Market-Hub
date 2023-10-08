@@ -54,8 +54,13 @@
    justify-content: space-around;
    margin-bottom: 50px;
    margin-top: -50px;
-  
+   /* overflow-y: scroll;
+   height: 400px; 
+   */
 } 
+/* .mapping-reviws::-webkit-scrollbar{
+    width: 5px;
+} */
 
    .flex-contsiner-review{
     /* display: flex; */
