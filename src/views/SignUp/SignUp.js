@@ -66,7 +66,7 @@ export default function SignUp() {
     
     const temparr =[...userData,obj] ;
     setUserData(temparr);
-    localStorage.setItem('userdata',JSON.stringify(temparr));
+    localStorage.setItem('userdata',JSON.stringify(obj));
 
   }
   };
@@ -153,8 +153,9 @@ export default function SignUp() {
             </div>
           </div>
           <div class="col-12">
-            <button type="button" class="btn btn-signup"
-              onClick={HandleSingUp} >SignUp</button> <hr />
+             <button type="button" class="btn btn-signup"
+              onClick={HandleSingUp} >SignUp</button> 
+              <hr />
 
             Already have an account ? <Link to="/login">LogIn</Link>
           </div>

@@ -40,7 +40,7 @@ export default function AddressForm() {
 
                         </div>
                         <div className="modal-footer">
-                            <button type="button" className="btn-deliver">Deliver To This 
+                            <button type="button" className="btn-deliver button1">Deliver To This 
                              Address</button>
                         </div>
                     </div>

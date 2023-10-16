@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import logo from  "./../../views/Home/img/logo.png"
 
  const Navbar = ()=>
+
+//  const user = parseInt(localStorage.getItem('currentuser'))
+ 
 { 
   return (
     <nav class="navbar navbar-expand-lg fs-4 nav1 bg-light">

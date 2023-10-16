@@ -20,16 +20,13 @@ export default function Login() {
       const sotreData=JSON.parse(getData);
     console.log(sotreData);
 
-    const matchData=sotreData.find((obj)=>{
-       return obj.email===email && obj.password===password
-    })
-    if(matchData)
-    {
-      showToast('LogIn Successfully', 'success', 3000);
-    }
-    else{
-      showToast('enter valid password and email', 'alert', 3000);
-    }
+   if (sotreData.email===email && sotreData.password===password) {
+      localStorage.setItem("currentuser", JSON.stringify(sotreData))
+      window.location.href = "/"
+   }
+   else{
+    showToast('enter valid password and email', 'alert', 3000);
+   }
 
   };
 
