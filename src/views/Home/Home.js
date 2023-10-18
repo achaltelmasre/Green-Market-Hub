@@ -16,13 +16,7 @@ import store from "./img/store.png";
 import { Carousel } from "react-bootstrap";
 import {Link} from "react-router-dom";
 import order from "./../../views/Order/Order"
-
-
-
-import "./Home.css";
-
-
-
+import "./Home.css"
 
 function Home(){
    
@@ -32,8 +26,6 @@ function Home(){
            
 
            <Navbar />
-
-
 
          <div className='design-project slider-img slider-img1'>
             
@@ -57,11 +49,11 @@ function Home(){
                 <p className="p-3 pt-5 text-secondary ms-5 me-5 fs-5">We’re not your average fruit importers. We have expertise in sourcing the choicest of fresh fruits from around the world and distributing it across the length and breadth of India. Our top-notch distribution network strengthened through almost a century of existence in the fruit business, works efficiently to ensure the fruits are delivered far and wide with an intriguing depth of freshness. We provide fresh fruits online and fresh vegetables online.</p>
 
 
-                <h2 className="text-center text-danger">Latest News</h2>
+                {/* <h2 className="text-center text-danger">Latest News</h2>
                 <div className="home-img-news">
                   
                   <News />
-                </div>
+                </div> */}
 
                 <p className="p-3 pt-5 text-secondary ms-5 me-5 fs-5">We have expertise in providing fresh fruits online and fresh vegetables online and offline and sourcing the choicest of fruits and vegetables from around the world</p>
 
